@@ -1,0 +1,182 @@
+body
+{
+	background:#ed6ecc url(../Images/centerbg.png) no-repeat center top;
+}
+
+#main
+{
+	width:1080px;
+	margin:0px auto;
+}
+
+#nav
+{
+	margin-left:15px;
+	width:850px;
+	height:40px;
+	margin-bottom:10px;
+	float:left;
+}
+
+#nav_left
+{
+	width:5px;
+	height:40px;
+	background:url(../Images/center_nav_bg.png) no-repeat;
+	float:left;
+}
+
+#nav_center
+{
+	width:820px;
+	height:40px;
+	background:url(../Images/center_nav_bg.png) no-repeat -5px 0px;
+	float:left;
+	padding:0px 10px;
+}
+
+#nav_center a
+{
+	height:40px;
+	width:90px;
+	line-height:40px;
+	text-align:center;
+	color:#FFF;
+	font-size:14px;
+	text-decoration:none;
+	display:block;
+	float:left;
+}
+
+#nav_center a:hover
+{
+	background:url(../Images/center_nav_bg.png) no-repeat -5px -40px;
+}
+
+#nav_right
+{
+	width:5px;
+	height:40px;
+	background:url(../Images/center_nav_bg.png) no-repeat -845px 0px;
+	float:left;
+}
+
+#column
+{
+	color:#fff;
+	font-weight:normal;
+	font-size:24px;
+	padding:0px;
+	margin:0px;
+	display:block;
+	width:215px;
+	height:40px;
+	line-height:40px;
+	float:left;
+	text-align:center;
+	opacity:0.9;
+}
+
+#logo
+{
+	background:url(../Images/toplogo.png) no-repeat -461px 0px;
+	width:190px;
+	height:25px;
+	margin:0px auto;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+#left
+{
+	width:175px;
+	padding:20px;
+	height:675px;
+	float:left;
+	background:url(../Images/center_left.png) no-repeat;
+	font-size:14px;
+}
+
+#content
+{
+	width:850px;
+	margin-left:15px;
+	float:left;
+}
+
+#content_top
+{
+	height:10px;
+	width:850px;
+	background:url(../Images/center_center_top.png) no-repeat;
+}
+
+#content_center
+{
+	width:810px;
+	min-height:731px;
+	padding:10px 20px;
+	background:url(../Images/center_center_center.png) repeat-y;
+}
+
+#content_bottom
+{
+	height:12px;
+	width:850px;
+	background:url(../Images/center_center_bottom.png) no-repeat;
+}
+
+.picture {
+	display: inline-block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:solid 2px #f2f2f2;
+	padding:0px;
+	margin:0px;
+	cursor:pointer;
+}
+
+#left ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+#left li
+{
+	padding:0px;
+	margin:0px;
+	margin:5px 0px;
+}
+
+#left a
+{
+	color:#333;
+	text-decoration:none;
+}
+
+#left a:hover
+{
+	text-decoration:underline;
+}
+
+#left .addArticle
+{
+	width:175px;
+	height:20px;
+	line-height:20px;
+	display:block;
+	background:url(../Images/center_icon.png) no-repeat 20px 0px;
+	text-align:center;
+	margin-top:10px;
+}
+
+.nameh
+{
+	font-size:20px;
+	color:#333;
+	text-align:center;
+	margin:10px 0px;
+}

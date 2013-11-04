@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>上传头像</title>
+<style>
+.tab_up td
+{
+	height:30px;
+	padding:0px 5px;
+	font-size:12px;
+	font-family:微软雅黑;
+}
+.index1
+{
+	background:#f6f6f6;
+}
+
+.index2
+{
+	background:#e9e9e9;
+}
+</style>
+</head>
+
+<body>
+<form action="__URL__/doUploadPic" method="post" enctype="multipart/form-data">
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" class="tab_up">
+  <tr class="index1">
+    <td>头像&nbsp;&nbsp;(最佳尺寸200px*200px)</td>
+    <td ><input type="file" name="picture" id="picture" /><img src="__PUBLIC__/Uploads/<{$userPath}><{$list.picture}>" height="100" />
+    </td>
+  </tr>
+  <tr class="index2">
+    <td>封面形象&nbsp;&nbsp;(最佳尺寸200px*200px)</td>
+    <td><input type="file" name="cover" id="cover" />
+    <img src="__PUBLIC__/Uploads/<{$userPath}><{$list.cover}>" height="100" />
+    </td>
+  </tr>
+  <tr class="index1">
+    <td colspan="2" align="center"><input type="submit" name="button" id="button" value="提交" /></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

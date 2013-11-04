@@ -1,0 +1,20 @@
+body
+{
+	background:url(../Images/class1_bg.jpg) no-repeat center 45px;
+	background-color:#383949;
+}
+
+#main
+{
+	width:1366px;
+	margin:0px auto;
+	padding:72px;
+	height:588px;
+}
+
+.type_list
+{
+	width:392px;
+	margin:0px 0px;
+	margin-left:800px;
+}

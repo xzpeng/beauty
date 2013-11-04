@@ -1,0 +1,1923 @@
+[ 2013-10-29T10:46:46+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.012978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013106s ]
+SQL: DESCRIBE nc_user [ RunTime:0.006001s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000187s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.003978s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.072003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072152s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.048645s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.041157s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.007922s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.060938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.159010s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001449s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001564s ]
+
+[ 2013-10-29T10:46:46+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006968s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007084s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+
+[ 2013-10-29T10:47:10+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001124s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003602s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000514s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002793s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035785s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000676s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000554s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000470s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002503s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000748s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2013-10-29T10:47:10+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000862s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+
+[ 2013-10-29T10:49:22+08:00 ] 127.0.0.1 /index.php/Article/index/id/25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001812s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001942s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.003810s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000159s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002918s ]
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: keywords D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 12 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' )  [ RunTime:0.005271s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 16 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.002744s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000227s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: typePid D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 19 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029651s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000835s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000739s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000648s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003191s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000944s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2013-10-29T10:49:22+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+
+[ 2013-10-29T10:49:22+08:00 ] 127.0.0.1 /index.php/Article/loadList/id/25/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001279s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.004391s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000395s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.003770s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` = '25' ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.002038s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` = '25' ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000514s ]
+
+[ 2013-10-29T10:49:26+08:00 ] 127.0.0.1 /index.php/Article/index/id/23
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001243s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.003564s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002776s ]
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: keywords D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 12 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' )  [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 16 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.002579s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: typePid D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 19 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014324s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000825s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000738s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003184s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000931s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2013-10-29T10:49:26+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001283s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+
+[ 2013-10-29T10:49:26+08:00 ] 127.0.0.1 /index.php/Article/loadList/id/23/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002411s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002517s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002396s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.011135s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.009693s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` = '23' ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` = '23' ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000225s ]
+
+[ 2013-10-29T10:49:30+08:00 ] 127.0.0.1 /index.php/Article/index/id/24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001102s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.058200s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000175s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.003801s ]
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000330s ]
+NOTIC: [8] Undefined index: keywords D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 12 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' )  [ RunTime:0.000305s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 16 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.004329s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000450s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: typePid D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 19 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022417s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000842s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000794s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000706s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003357s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000937s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2013-10-29T10:49:30+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002422s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002530s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+
+[ 2013-10-29T10:49:30+08:00 ] 127.0.0.1 /index.php/Article/loadList/id/24/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001239s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.004355s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000207s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.014667s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` = '24' ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.000499s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` = '24' ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.001269s ]
+
+[ 2013-10-29T10:49:34+08:00 ] 127.0.0.1 /index.php/Article/index/id/28
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001841s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.014441s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000145s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002571s ]
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.000397s ]
+NOTIC: [8] Undefined index: keywords D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 12 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' )  [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 16 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.002660s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: typePid D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 19 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014535s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000841s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000737s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003260s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000979s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2013-10-29T10:49:34+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001139s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+
+[ 2013-10-29T10:49:34+08:00 ] 127.0.0.1 /index.php/Article/loadList/id/28/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001170s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.004729s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000564s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.003355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` = '28' ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.000930s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` = '28' ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000317s ]
+
+[ 2013-10-29T10:49:36+08:00 ] 127.0.0.1 /index.php/Article/index/pid/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001109s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.005534s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000166s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002608s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 9 行.
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id= ) LIMIT 1   [ RunTime:0.000140s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `title`,`pid` FROM `nc_type` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: keywords D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 13 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' )  [ RunTime:0.000319s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 15 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.002962s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000279s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014595s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000838s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000831s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000697s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003380s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000958s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2013-10-29T10:49:36+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001111s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+
+[ 2013-10-29T10:49:36+08:00 ] 127.0.0.1 /index.php/Article/loadList/pid/4/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001353s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.004546s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000167s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.003430s ]
+SQL: DESCRIBE nc_type [ RunTime:0.004778s ]
+SQL: SELECT `id` FROM `nc_type` WHERE ( pid=4 )  [ RunTime:0.000414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` IN ('23','24','25','26','27','28','29','30','31','32') ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.038878s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` IN ('23','24','25','26','27','28','29','30','31','32') ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000288s ]
+
+[ 2013-10-29T10:49:38+08:00 ] 127.0.0.1 /index.php/Article/loadList/id/28/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001482s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003748s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.003788s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.002949s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` = '28' ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.000404s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` = '28' ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000591s ]
+
+[ 2013-10-29T10:57:48+08:00 ] 127.0.0.1 /index.php/Article/index?keywords=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.003545s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000156s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002669s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 9 行.
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id= ) LIMIT 1   [ RunTime:0.000120s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `title`,`pid` FROM `nc_type` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 184 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = null )  [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 16 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.002580s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: typePid D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 19 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013010s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000697s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000477s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002389s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000798s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2013-10-29T10:57:48+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000737s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+
+[ 2013-10-29T10:57:48+08:00 ] 127.0.0.1 /index.php/Article/loadList/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000753s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.004415s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000251s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.003378s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `display` = '1' ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000491s ]
+
+[ 2013-10-29T10:57:52+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001170s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003537s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000119s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002771s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022320s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000923s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000773s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003360s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000957s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2013-10-29T10:57:52+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001134s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+
+[ 2013-10-29T10:59:11+08:00 ] 127.0.0.1 /index.php/User/regis
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001313s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+SQL: DESCRIBE nc_user [ RunTime:0.006690s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000241s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013946s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000879s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000890s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003786s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001169s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2013-10-29T10:59:22+08:00 ] 127.0.0.1 /index.php/User/checkUserName
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000803s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004154s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: SELECT `userName` FROM `nc_user` WHERE ( userName="testtesttest" ) LIMIT 1   [ RunTime:0.000228s ]
+
+[ 2013-10-29T11:00:30+08:00 ] 127.0.0.1 /index.php/User/doRegis
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003735s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: SELECT `userName` FROM `nc_user` WHERE ( userName="testtesttest" ) LIMIT 1   [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: marital D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 150 行.
+SQL: INSERT INTO `nc_user` (`userName`,`nickName`,`password`,`email`,`sex`,`birthday`,`height`,`weight`,`measure1`,`measure2`,`measure3`,`edu`,`name`,`area`,`zip`,`mphone`,`qq`,`job`,`workRemark`,`marital`,`address`,`regTime`,`wburl`) VALUES ('testtesttest','test','5d93ceb70e2bf5daa84ec3d0cd2c731a','111111@123.cn','1',1382976000,0,0,0,0,0,'5','铁素体','北京|北京市|东城区','110101','13333333333','111111111','','',0,'散弹法34阿斯蒂芬',1383015630,'weibo.com/11111') [ RunTime:0.090122s ]
+SQL: SELECT `id`,`userName`,`password`,`email`,`nickName`,`sex`,`birthday`,`qq`,`rna`,`loginTime`,`loginDays`,`picture`,`name` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000871s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018960s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000747s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000732s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000616s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003496s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001306s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2013-10-29T11:00:31+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000770s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: DESCRIBE nc_user [ RunTime:0.009923s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: UPDATE `nc_user` SET `loginDays`=loginDays+1 WHERE ( id=2 ) [ RunTime:0.040829s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383015631 WHERE ( id=2 ) [ RunTime:0.031015s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: DESCRIBE nc_article [ RunTime:0.003078s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SELECT `id`,`title`,`hits`,`edit_time`,`display`,`recommend`,`type` FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 0,40   [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031063s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000453s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000395s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000283s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002086s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000859s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2013-10-29T11:00:43+08:00 ] 127.0.0.1 /index.php/Center/rna
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003635s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383015643 WHERE ( id=2 ) [ RunTime:0.029367s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT `lineup`,`lineup_time`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000153s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026574s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001262s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001190s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004252s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000925s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2013-10-29T11:00:47+08:00 ] 127.0.0.1 /index.php/Center/addArticle
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001726s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004075s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383015647 WHERE ( id=2 ) [ RunTime:0.028057s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: DESCRIBE nc_type [ RunTime:0.002828s ]
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = 0 ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.016255s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '1' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000814s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '5' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.002881s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '6' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.001973s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '7' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000536s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '8' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000483s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '9' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000461s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '10' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000605s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '2' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000547s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '11' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '12' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.001279s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '13' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000637s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '14' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '15' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000392s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '3' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000442s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '16' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '17' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '18' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000415s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '19' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000366s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '20' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.052388s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '21' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000444s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '22' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000431s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '23' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '24' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '25' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000558s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '26' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000356s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '27' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000473s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '28' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000421s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '29' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '30' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '31' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '32' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: session_id D:\xampp\htdocs\beauty\Home\Runtime\Cache\0ca2ebdf1f9f1ebfd81086788a09e91a.php 第 20 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036588s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001331s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001223s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001091s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005474s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001524s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2013-10-29T11:07:29+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001875s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: DESCRIBE nc_user [ RunTime:0.046286s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383016049 WHERE ( id=2 ) [ RunTime:0.085419s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: DESCRIBE nc_type [ RunTime:0.004073s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018974s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000927s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000748s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000681s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003386s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000918s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2013-10-29T11:07:29+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001134s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+
+[ 2013-10-29T11:07:34+08:00 ] 127.0.0.1 /index.php/Public/verify?21476
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001197s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+
+[ 2013-10-29T11:07:46+08:00 ] 127.0.0.1 /index.php/User/doLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003639s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383016066 WHERE ( id=2 ) [ RunTime:0.045497s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013287s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001216s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001209s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001152s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005351s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001490s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001587s ]
+
+[ 2013-10-29T11:07:49+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001229s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003602s ]
+
+[ 2013-10-29T11:08:01+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001143s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003552s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383016081 WHERE ( id=2 ) [ RunTime:0.026482s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: DESCRIBE nc_article [ RunTime:0.002999s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002501s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT `id`,`title`,`hits`,`edit_time`,`display`,`recommend`,`type` FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 0,40   [ RunTime:0.000205s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013310s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000633s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000576s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002478s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000777s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2013-10-29T11:08:08+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001286s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003542s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000715s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383016088 WHERE ( id=2 ) [ RunTime:0.064432s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002832s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000281s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012943s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000636s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000613s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000501s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002590s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000782s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2013-10-29T11:08:09+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000987s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+
+[ 2013-10-29T11:08:11+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001662s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001805s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003682s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000819s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383016091 WHERE ( id=2 ) [ RunTime:0.052193s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: DESCRIBE nc_type [ RunTime:0.004057s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021652s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001008s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000892s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000759s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001211s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2013-10-29T11:08:11+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+
+[ 2013-10-29T11:46:27+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004461s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000137s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.016825s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011918s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000967s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000868s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000694s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003540s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000965s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2013-10-29T11:46:27+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001187s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+
+[ 2013-10-29T11:47:12+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004656s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000215s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002850s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000355s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013575s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000804s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000701s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003110s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000915s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2013-10-29T11:47:13+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001111s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+
+[ 2013-10-29T11:47:43+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003806s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.011956s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011604s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000764s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000710s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000691s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003119s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000885s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2013-10-29T11:47:43+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001201s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002619s ]
+
+[ 2013-10-29T11:48:40+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004026s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002743s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012390s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000824s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000692s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000603s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003056s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000883s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2013-10-29T11:48:40+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001109s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+
+[ 2013-10-29T11:52:41+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: DESCRIBE nc_user [ RunTime:0.005002s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000146s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.003225s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000446s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013823s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000756s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000691s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000568s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002921s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000808s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2013-10-29T11:52:41+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001270s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+
+[ 2013-10-29T11:52:42+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001855s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002006s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+SQL: DESCRIBE nc_user [ RunTime:0.029225s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T11:52:44+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001143s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+
+[ 2013-10-29T12:02:24+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: DESCRIBE nc_user [ RunTime:0.036961s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000177s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.004114s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019356s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001169s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000739s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000617s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003500s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000879s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2013-10-29T12:02:24+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001257s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+
+[ 2013-10-29T12:02:54+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003747s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002709s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012164s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000673s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000597s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002733s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000813s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2013-10-29T12:02:54+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001012s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+
+[ 2013-10-29T12:02:55+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001012s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003999s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000221s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:04:19+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001568s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003657s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000129s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:04:21+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000976s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003760s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000122s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:04:24+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000983s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2013-10-29T12:06:12+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001255s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003901s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:07:00+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000993s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004209s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000136s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:07:34+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003935s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000125s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002904s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012966s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000809s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000653s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002917s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000800s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2013-10-29T12:07:34+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001136s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+
+[ 2013-10-29T12:07:36+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003849s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000137s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:08:01+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001095s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+
+[ 2013-10-29T12:08:02+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003936s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.003360s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012743s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000694s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000602s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002656s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000789s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2013-10-29T12:08:02+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001743s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001860s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+
+[ 2013-10-29T12:08:04+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004101s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000198s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:09:02+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003880s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000121s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002809s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011780s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000777s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000689s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001247s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003656s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000882s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2013-10-29T12:09:02+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001159s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+
+[ 2013-10-29T12:09:03+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001155s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004007s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000125s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:09:22+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003820s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000158s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002755s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012154s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000793s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000729s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000621s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003126s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000918s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2013-10-29T12:09:22+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001246s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+
+[ 2013-10-29T12:09:23+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004086s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004888s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+SQL: DESCRIBE nc_user [ RunTime:0.016383s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000156s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:10:05+08:00 ] 127.0.0.1 /index.php/User/snsLogin?type=qq
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003760s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+
+[ 2013-10-29T12:41:46+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.038384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.038499s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015722s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003906s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000221s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.003609s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.025162s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.054313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054422s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.021240s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007914s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.008079s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038710s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001549s ]
+
+[ 2013-10-29T12:41:46+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001120s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+
+[ 2013-10-29T12:45:23+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004980s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000261s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.003269s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000250s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014186s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000793s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000764s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000630s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003145s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000900s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2013-10-29T12:45:23+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001105s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+
+[ 2013-10-29T12:45:29+08:00 ] 127.0.0.1 /index.php/Public/verify?20107
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001545s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+
+[ 2013-10-29T12:45:40+08:00 ] 127.0.0.1 /index.php/User/doLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001163s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004308s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000188s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: SELECT `id`,`userName`,`password`,`email`,`nickName`,`sex`,`birthday`,`qq`,`rna`,`loginTime`,`loginDays`,`picture`,`name` FROM `nc_user` WHERE ( `userName` = 'testtesttest' ) LIMIT 1   [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: autoLogin D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028284s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001178s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001383s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000799s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004405s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000974s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2013-10-29T12:45:41+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001343s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003980s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383021941 WHERE ( id=2 ) [ RunTime:0.024244s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: DESCRIBE nc_type [ RunTime:0.003075s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000301s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028583s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000871s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000783s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000862s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003422s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001039s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2013-10-29T12:45:41+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001187s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+
+[ 2013-10-29T12:46:01+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001150s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: DESCRIBE nc_user [ RunTime:0.005369s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383021961 WHERE ( id=2 ) [ RunTime:0.018943s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: DESCRIBE nc_type [ RunTime:0.003269s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015096s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002715s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000871s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005397s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000955s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2013-10-29T12:46:02+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2013-10-29T12:46:17+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001004s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002179s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004367s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383021977 WHERE ( id=2 ) [ RunTime:0.025561s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: DESCRIBE nc_type [ RunTime:0.007584s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014312s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000628s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000600s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000392s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002391s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000747s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2013-10-29T12:46:17+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001053s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+
+[ 2013-10-29T12:46:31+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001153s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004013s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000745s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383021991 WHERE ( id=2 ) [ RunTime:0.048944s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000641s ]
+SQL: DESCRIBE nc_type [ RunTime:0.003303s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000377s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024132s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000926s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000797s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003397s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000928s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2013-10-29T12:46:32+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+
+[ 2013-10-29T12:47:18+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001151s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004043s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022038 WHERE ( id=2 ) [ RunTime:0.030994s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: DESCRIBE nc_type [ RunTime:0.019496s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000334s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+NOTIC: [8] Undefined variable: loginDays D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 63 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013848s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000848s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000737s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000676s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003330s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001051s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2013-10-29T12:47:19+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005206s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005370s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015811s ]
+
+[ 2013-10-29T12:47:28+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005092s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005243s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001930s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003722s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022047 WHERE ( id=2 ) [ RunTime:0.032309s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: DESCRIBE nc_type [ RunTime:0.008385s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+NOTIC: [8] Undefined variable: loginDays D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 63 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.075539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075651s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015379s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.016182s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.007983s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.041614s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001817s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001917s ]
+
+[ 2013-10-29T12:47:28+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000722s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+
+[ 2013-10-29T12:47:42+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001175s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004054s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022062 WHERE ( id=2 ) [ RunTime:0.028342s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002858s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+NOTIC: [8] Undefined variable: address D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 63 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013339s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000778s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000697s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000620s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003049s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001031s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2013-10-29T12:47:42+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001789s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001928s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+
+[ 2013-10-29T12:48:49+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001111s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003755s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022129 WHERE ( id=2 ) [ RunTime:0.031761s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: DESCRIBE nc_type [ RunTime:0.003054s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000232s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012349s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000545s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000608s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000404s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002343s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000801s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2013-10-29T12:48:49+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001175s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+
+[ 2013-10-29T12:53:59+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001081s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003812s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022439 WHERE ( id=2 ) [ RunTime:0.025057s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002846s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021162s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001179s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002138s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005946s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001374s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001493s ]
+
+[ 2013-10-29T12:53:59+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009328s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+
+[ 2013-10-29T12:54:25+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001156s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003914s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022465 WHERE ( id=2 ) [ RunTime:0.023615s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002968s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000326s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014717s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000925s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000785s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003464s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001013s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2013-10-29T12:54:25+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001184s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+
+[ 2013-10-29T12:55:43+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000982s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003740s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022543 WHERE ( id=2 ) [ RunTime:0.039940s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002815s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013973s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000736s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000609s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000520s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002722s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000806s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2013-10-29T12:55:43+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000998s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+
+[ 2013-10-29T12:55:54+08:00 ] 127.0.0.1 /index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: DESCRIBE nc_user [ RunTime:0.016232s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383022554 WHERE ( id=2 ) [ RunTime:0.028649s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: DESCRIBE nc_type [ RunTime:0.003782s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 ) ORDER BY sort desc  [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014610s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000712s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000615s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002690s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000795s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2013-10-29T12:55:54+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001271s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+

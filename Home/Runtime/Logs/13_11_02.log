@@ -1,0 +1,1850 @@
+[ 2013-11-02T13:19:19+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.014655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029036s ]
+SQL: DESCRIBE nc_user [ RunTime:0.087767s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000140s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.028112s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.161112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161253s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.009830s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007542s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.008279s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.008389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034336s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2013-11-02T13:19:19+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.031657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.031763s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+
+[ 2013-11-02T13:29:34+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000982s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003665s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002513s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056235s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000561s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000453s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002061s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000681s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2013-11-02T13:29:34+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001014s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+
+[ 2013-11-02T13:32:14+08:00 ] 127.0.0.1 /index.php/Article/index/id/23
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000999s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.003495s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002599s ]
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: keywords D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 12 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' )  [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 16 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.049118s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: typePid D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 19 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 119 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051559s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000842s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000707s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000591s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003456s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001057s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2013-11-02T13:32:14+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001047s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+
+[ 2013-11-02T13:32:14+08:00 ] 127.0.0.1 /index.php/Article/loadList/id/23/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000772s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.023536s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.029547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` = '23' ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.006235s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` = '23' ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000357s ]
+
+[ 2013-11-02T13:32:40+08:00 ] 127.0.0.1 /index.php/Article/index/id/23
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000997s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.003455s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000123s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002664s ]
+SQL: SELECT `title`,`pid` FROM `nc_type` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000260s ]
+NOTIC: [8] Undefined index: keywords D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 12 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' )  [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 16 行.
+SQL: DESCRIBE nc_ad [ RunTime:0.002664s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=3 ) LIMIT 1   [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: typePid D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 19 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\1050745fee6f209a118eb39148d67262.php 第 119 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013212s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000552s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000453s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002054s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000656s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2013-11-02T13:32:40+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000875s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2013-11-02T13:32:40+08:00 ] 127.0.0.1 /index.php/Article/loadList/id/23/pg/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000768s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.005392s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000165s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_article [ RunTime:0.002805s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `type` = '23' ) AND ( `display` = '1' ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SELECT `id`,`title`,`img`,`img_width`,`img_height`,`hits`,`promulgator`,`model`,`href`,`type` FROM `nc_article` WHERE ( `type` = '23' ) AND ( `display` = '1' ) ORDER BY recommend desc,sort desc,edit_time desc LIMIT 0,20   [ RunTime:0.000369s ]
+
+[ 2013-11-02T13:45:56+08:00 ] 127.0.0.1 /index.php/Public/verify?97434
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001367s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+
+[ 2013-11-02T13:46:04+08:00 ] 127.0.0.1 /index.php/User/doLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002576s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002693s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003972s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: SELECT `id`,`userName`,`password`,`email`,`nickName`,`sex`,`birthday`,`qq`,`rna`,`loginTime`,`loginDays`,`picture`,`name` FROM `nc_user` WHERE ( `userName` = 'testtesttest' ) LIMIT 1   [ RunTime:0.000312s ]
+NOTIC: [8] Undefined index: autoLogin D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008774s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000589s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000579s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002418s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000741s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2013-11-02T13:46:06+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000897s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003982s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: UPDATE `nc_user` SET `loginDays`=loginDays+1 WHERE ( id=2 ) [ RunTime:0.029544s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371166 WHERE ( id=2 ) [ RunTime:0.014294s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002884s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014323s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000628s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000555s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002389s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000734s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2013-11-02T13:46:06+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000942s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+
+[ 2013-11-02T13:46:10+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001469s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003723s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371170 WHERE ( id=2 ) [ RunTime:0.023849s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000367s ]
+SQL: DESCRIBE nc_article [ RunTime:0.004913s ]
+SQL: DESCRIBE nc_type [ RunTime:0.004288s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT `id`,`title`,`hits`,`edit_time`,`display`,`recommend`,`type` FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 0,40   [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016946s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000580s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000541s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000446s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002293s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000746s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2013-11-02T13:46:22+08:00 ] 127.0.0.1 /index.php/Center/editData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001936s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002071s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003871s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371182 WHERE ( id=2 ) [ RunTime:0.036221s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SELECT * FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000638s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 234 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pageTitle D:\xampp\htdocs\beauty\Home\Runtime\Cache\9af4fadfb84c66c9ff398ef74c4ac2df.php 第 5 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024050s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001182s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001093s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000904s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004627s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001399s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2013-11-02T13:46:35+08:00 ] 127.0.0.1 /index.php/Center/editData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000898s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003763s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371195 WHERE ( id=2 ) [ RunTime:0.027887s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT * FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000367s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 234 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pageTitle D:\xampp\htdocs\beauty\Home\Runtime\Cache\9af4fadfb84c66c9ff398ef74c4ac2df.php 第 5 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014494s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000827s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000555s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000440s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002568s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000747s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2013-11-02T13:46:48+08:00 ] 127.0.0.1 /index.php/Center/rna
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003649s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371208 WHERE ( id=2 ) [ RunTime:0.025338s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT `lineup`,`lineup_time`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000164s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011538s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000693s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000675s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002790s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000842s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2013-11-02T13:46:58+08:00 ] 127.0.0.1 /index.php/Center/addArticle
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001680s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003621s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371218 WHERE ( id=2 ) [ RunTime:0.073492s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000403s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: DESCRIBE nc_type [ RunTime:0.004137s ]
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = 0 ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '1' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000410s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '5' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000400s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '6' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '7' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000368s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '8' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '9' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000405s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '10' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '2' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000359s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '11' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000386s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '12' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000358s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '13' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '14' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '15' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000334s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '3' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000374s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '16' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '17' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '18' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000331s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '19' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000323s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '20' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000361s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '21' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '22' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000393s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '23' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000331s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '24' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '25' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '26' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000626s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '27' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '28' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000433s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '29' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '30' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '31' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000346s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '32' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: session_id D:\xampp\htdocs\beauty\Home\Runtime\Cache\0ca2ebdf1f9f1ebfd81086788a09e91a.php 第 20 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016247s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000759s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000744s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002989s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2013-11-02T13:47:35+08:00 ] 127.0.0.1 /index.php/Center/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001044s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003697s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371254 WHERE ( id=2 ) [ RunTime:0.152867s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: DESCRIBE nc_article [ RunTime:0.003087s ]
+SQL: INSERT INTO `nc_article` (`type`,`title`,`sort`,`keywords`,`display`,`recommend`,`edit_time`,`href`,`promulgator`,`model`,`content`,`img`,`img_width`,`img_height`) VALUES (1,'testarticle',0,'test',0,0,1383371254,'',2,'Home','<p>asdfasdfasdfasdfasdf</p>','527491f6e08b0.jpg',950,1409) [ RunTime:0.055489s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016050s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001460s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001457s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006132s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001729s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2013-11-02T13:47:36+08:00 ] 127.0.0.1 /index.php/Center/addArticle
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001180s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004939s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371256 WHERE ( id=2 ) [ RunTime:0.030359s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: DESCRIBE nc_type [ RunTime:0.002959s ]
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = 0 ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '1' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000359s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '5' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '6' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '7' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000272s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '8' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '9' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '10' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '2' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '11' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000724s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '12' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000441s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '13' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000334s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '14' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000272s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '15' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '3' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000284s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '16' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '17' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000265s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '18' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000251s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '19' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000467s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '20' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '21' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '22' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000284s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '23' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000255s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '24' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '25' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '26' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '27' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '28' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '29' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '30' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '31' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000394s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '32' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: session_id D:\xampp\htdocs\beauty\Home\Runtime\Cache\0ca2ebdf1f9f1ebfd81086788a09e91a.php 第 20 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012580s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000814s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000740s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003185s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002747s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002830s ]
+
+[ 2013-11-02T13:47:41+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002532s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002668s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004244s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371261 WHERE ( id=2 ) [ RunTime:0.034107s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: DESCRIBE nc_article [ RunTime:0.003165s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002591s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT `id`,`title`,`hits`,`edit_time`,`display`,`recommend`,`type` FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 0,40   [ RunTime:0.000208s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000141s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013653s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000792s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000747s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003182s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000948s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2013-11-02T13:47:47+08:00 ] 127.0.0.1 /index.php/Article/show/id/7
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001198s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.004226s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371267 WHERE ( id=2 ) [ RunTime:0.021232s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: DESCRIBE nc_article [ RunTime:0.003067s ]
+SQL: SELECT * FROM `nc_article` WHERE ( `display` = '1' ) AND ( `id` = '7' ) LIMIT 1   [ RunTime:0.000506s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008736s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000677s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000665s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002817s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000963s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2013-11-02T13:48:01+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003725s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000163s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002733s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011344s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000681s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000674s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000561s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002934s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000881s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2013-11-02T13:48:01+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000993s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+
+[ 2013-11-02T13:56:53+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001071s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004050s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371813 WHERE ( id=2 ) [ RunTime:0.025219s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: DESCRIBE nc_article [ RunTime:0.003019s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002797s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SELECT `id`,`title`,`hits`,`edit_time`,`display`,`recommend`,`type` FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 0,40   [ RunTime:0.000212s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000142s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013657s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000741s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000656s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002766s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000848s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2013-11-02T13:56:56+08:00 ] 127.0.0.1 /index.php/Article/show/id/7
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001242s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\xampp\htdocs\beauty\Home\Lib\Action\ArticleAction.class.php 第 3 行.
+SQL: DESCRIBE nc_user [ RunTime:0.003659s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000435s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383371816 WHERE ( id=2 ) [ RunTime:0.023282s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: DESCRIBE nc_article [ RunTime:0.003123s ]
+SQL: SELECT * FROM `nc_article` WHERE ( `display` = '1' ) AND ( `id` = '7' ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: UPDATE `nc_article` SET `hits`=hits+1 WHERE ( `display` = '1' ) AND ( `id` = '7' ) [ RunTime:0.019927s ]
+SQL: SELECT * FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: DESCRIBE nc_score [ RunTime:0.004003s ]
+SQL: SELECT * FROM `nc_score` WHERE ( `uid` = 2 ) AND ( `judges` = 2 ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT AVG(stature) AS tp_avg FROM `nc_score` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT AVG(face) AS tp_avg FROM `nc_score` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000556s ]
+SQL: SELECT AVG(liked) AS tp_avg FROM `nc_score` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: DESCRIBE nc_ad [ RunTime:0.004211s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=1 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT `model`,`uid`,`img`,`href`,`window`,`bgcolor` FROM `nc_ad` WHERE ( type=2 ) LIMIT 1   [ RunTime:0.000232s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\ad12bde228c892cdba363294fb532932.php 第 73 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\ad12bde228c892cdba363294fb532932.php 第 121 行.
+NOTIC: [8] Undefined index: gfrz D:\xampp\htdocs\beauty\Home\Runtime\Cache\ad12bde228c892cdba363294fb532932.php 第 151 行.
+NOTIC: [8] Undefined index: swf D:\xampp\htdocs\beauty\Home\Runtime\Cache\ad12bde228c892cdba363294fb532932.php 第 234 行.
+NOTIC: [8] Undefined index: gfrz D:\xampp\htdocs\beauty\Home\Runtime\Cache\ad12bde228c892cdba363294fb532932.php 第 275 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041529s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000692s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000567s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002560s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000746s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2013-11-02T13:56:56+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001012s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+
+[ 2013-11-02T14:56:38+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001162s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: DESCRIBE nc_user [ RunTime:0.005537s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000170s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.004347s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017861s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000863s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000713s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000602s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003125s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000893s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2013-11-02T14:56:38+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001118s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2013-11-02T14:56:39+08:00 ] 127.0.0.1 /index.php/Index/type/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001083s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004286s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000182s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002965s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=3 ) ORDER BY sort desc  [ RunTime:0.000259s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015482s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000800s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000715s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000606s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003221s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003119s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003211s ]
+
+[ 2013-11-02T14:56:39+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001410s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+
+[ 2013-11-02T14:56:42+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001066s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003637s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000121s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002835s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000281s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013457s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000783s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000701s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000625s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003064s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000977s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2013-11-02T14:56:43+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001190s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+
+[ 2013-11-02T14:56:44+08:00 ] 127.0.0.1 /index.php/Public/verify?14968
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001337s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+
+[ 2013-11-02T14:56:54+08:00 ] 127.0.0.1 /index.php/User/doLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001071s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: DESCRIBE nc_user [ RunTime:0.006679s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000189s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: SELECT `id`,`userName`,`password`,`email`,`nickName`,`sex`,`birthday`,`qq`,`rna`,`loginTime`,`loginDays`,`picture`,`name` FROM `nc_user` WHERE ( `userName` = 'testtesttest' ) LIMIT 1   [ RunTime:0.000432s ]
+NOTIC: [8] Undefined index: autoLogin D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048059s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001146s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001186s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004840s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001484s ]
+
+[ 2013-11-02T14:56:55+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003840s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383375415 WHERE ( id=2 ) [ RunTime:0.021781s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002805s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014590s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000811s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000717s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000609s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003094s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001215s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001281s ]
+
+[ 2013-11-02T14:56:55+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+
+[ 2013-11-02T16:43:10+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.021966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.022117s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014127s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.054829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054970s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.038597s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007856s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.008136s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.008511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.063423s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001858s ]
+
+[ 2013-11-02T16:43:14+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+
+[ 2013-11-02T16:43:16+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001194s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010089s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000712s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000696s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000831s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003309s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000895s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2013-11-02T16:43:19+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001262s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+
+[ 2013-11-02T16:43:21+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001108s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003916s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002805s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.069725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069839s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000802s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000939s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003382s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000936s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2013-11-02T16:43:21+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001466s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006265s ]
+
+[ 2013-11-02T16:43:22+08:00 ] 127.0.0.1 /index.php/Public/verify?67864
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001250s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2013-11-02T16:43:30+08:00 ] 127.0.0.1 /index.php/User/doLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001887s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002025s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003970s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: SELECT `id`,`userName`,`password`,`email`,`nickName`,`sex`,`birthday`,`qq`,`rna`,`loginTime`,`loginDays`,`picture`,`name` FROM `nc_user` WHERE ( `userName` = 'testtesttest' ) LIMIT 1   [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: autoLogin D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009604s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000710s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000858s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000777s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003303s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000883s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2013-11-02T16:43:31+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: DESCRIBE nc_user [ RunTime:0.006494s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383381811 WHERE ( id=2 ) [ RunTime:0.032041s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: DESCRIBE nc_type [ RunTime:0.005142s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015226s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000811s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000727s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000612s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003124s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000970s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2013-11-02T16:43:31+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001150s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+
+[ 2013-11-02T16:43:59+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001177s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003801s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000474s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383381839 WHERE ( id=2 ) [ RunTime:0.029364s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: DESCRIBE nc_article [ RunTime:0.003169s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002580s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 1   [ RunTime:0.000418s ]
+SQL: SELECT `id`,`title`,`hits`,`edit_time`,`display`,`recommend`,`type` FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 0,40   [ RunTime:0.000205s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000143s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032255s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000822s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000761s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000611s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003144s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000910s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2013-11-02T16:44:02+08:00 ] 127.0.0.1 /index.php/Center/addArticle
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003650s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383381842 WHERE ( id=2 ) [ RunTime:0.035635s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: DESCRIBE nc_type [ RunTime:0.002990s ]
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = 0 ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.010164s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '1' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000765s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '5' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000301s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '6' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '7' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '8' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '9' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '10' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '2' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '11' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '12' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '13' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '14' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '15' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '3' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '16' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '17' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '18' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '19' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000359s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '20' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.013901s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '21' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '22' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000272s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000333s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '23' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000297s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '24' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000264s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '25' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '26' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '27' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000403s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '28' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '29' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '30' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '31' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '32' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000213s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: session_id D:\xampp\htdocs\beauty\Home\Runtime\Cache\0ca2ebdf1f9f1ebfd81086788a09e91a.php 第 20 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033580s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000864s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000702s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000603s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003158s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000881s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2013-11-02T16:44:54+08:00 ] 127.0.0.1 /index.php/Center/rna
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001089s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003717s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383381894 WHERE ( id=2 ) [ RunTime:0.032667s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT `lineup`,`lineup_time`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000206s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025914s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001178s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001103s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000946s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004732s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000872s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2013-11-02T16:45:28+08:00 ] 127.0.0.1 /index.php/Center/rna
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001498s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009148s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000742s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000715s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000706s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003170s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001016s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2013-11-02T16:45:36+08:00 ] 127.0.0.1 /index.php/Center/rna
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001209s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003499s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012198s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000905s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000820s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000711s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003694s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000945s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2013-11-02T16:45:45+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004134s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000131s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002647s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000276s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028420s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000772s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000743s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003299s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000897s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2013-11-02T16:45:45+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+
+[ 2013-11-02T16:45:48+08:00 ] 127.0.0.1 /index.php/Center/rna
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009280s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000777s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000847s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000611s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003193s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2013-11-02T16:50:46+08:00 ] 127.0.0.1 /index.php/Center/addArticle
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001214s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003927s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383382246 WHERE ( id=2 ) [ RunTime:0.020017s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000664s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: DESCRIBE nc_type [ RunTime:0.003451s ]
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = 0 ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000399s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '1' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000251s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '5' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '6' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '7' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '8' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '9' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '10' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000289s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '2' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000243s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '11' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '12' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '13' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '14' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '15' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '3' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '16' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '17' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '18' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '19' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '20' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000276s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '21' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '22' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000256s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '23' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '24' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '25' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '26' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000396s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '27' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '28' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000384s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '29' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000348s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '30' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '31' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '32' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: session_id D:\xampp\htdocs\beauty\Home\Runtime\Cache\0ca2ebdf1f9f1ebfd81086788a09e91a.php 第 20 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014628s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000796s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000695s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000630s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003098s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000892s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2013-11-02T16:50:47+08:00 ] 127.0.0.1 /index.php/Center/rna
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001277s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004373s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383382247 WHERE ( id=2 ) [ RunTime:0.029501s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT `lineup`,`lineup_time`,`rna` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011555s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000823s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000836s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000617s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003224s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000876s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2013-11-02T16:51:20+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000985s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+
+[ 2013-11-02T16:52:22+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001210s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+
+[ 2013-11-02T18:20:39+08:00 ] 127.0.0.1 /index.php/Center/addArticle
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001708s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009765s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000871s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000844s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000742s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003746s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001146s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2013-11-02T18:20:44+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001609s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001721s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004605s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000132s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.003171s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000279s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012670s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000911s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000830s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000736s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003544s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001057s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2013-11-02T18:20:44+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001300s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+
+[ 2013-11-02T18:20:45+08:00 ] 127.0.0.1 /index.php/Public/verify?38198
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+
+[ 2013-11-02T18:20:55+08:00 ] 127.0.0.1 /index.php/User/doLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001173s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003837s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000140s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: SELECT `id`,`userName`,`password`,`email`,`nickName`,`sex`,`birthday`,`qq`,`rna`,`loginTime`,`loginDays`,`picture`,`name` FROM `nc_user` WHERE ( `userName` = 'testtesttest' ) LIMIT 1   [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: autoLogin D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\xampp\htdocs\beauty\Home\Lib\Action\UserAction.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008954s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000706s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000689s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002920s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000888s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2013-11-02T18:20:56+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001170s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: DESCRIBE nc_user [ RunTime:0.005317s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000766s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383387656 WHERE ( id=2 ) [ RunTime:0.031436s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000841s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002915s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013083s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000829s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000840s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000930s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003629s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000957s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2013-11-02T18:20:56+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001064s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+
+[ 2013-11-02T18:20:59+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003799s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383387659 WHERE ( id=2 ) [ RunTime:0.033599s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: DESCRIBE nc_type [ RunTime:0.002879s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000293s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000780s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000691s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000595s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003004s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000938s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2013-11-02T18:20:59+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001392s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+
+[ 2013-11-02T18:21:01+08:00 ] 127.0.0.1 /index.php/Center/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001349s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: DESCRIBE nc_user [ RunTime:0.010316s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383387661 WHERE ( id=2 ) [ RunTime:0.025853s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: DESCRIBE nc_article [ RunTime:0.031997s ]
+SQL: DESCRIBE nc_type [ RunTime:0.011358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SELECT `id`,`title`,`hits`,`edit_time`,`display`,`recommend`,`type` FROM `nc_article` WHERE ( `promulgator` = 2 ) AND ( `model` = 'Home' ) LIMIT 0,40   [ RunTime:0.000366s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020543s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001164s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001109s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000938s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004761s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001690s ]
+
+[ 2013-11-02T18:21:03+08:00 ] 127.0.0.1 /index.php/Center/addArticle
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001918s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002055s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+SQL: DESCRIBE nc_user [ RunTime:0.003664s ]
+SQL: SELECT `loginTime` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: UPDATE `nc_user` SET `loginTime`=1383387663 WHERE ( id=2 ) [ RunTime:0.020380s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000330s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: DESCRIBE nc_type [ RunTime:0.002745s ]
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = 0 ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000406s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '1' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000321s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '5' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000292s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '6' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '7' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '8' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '9' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '10' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '2' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '11' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '12' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '13' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '14' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000331s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '15' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '3' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '16' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '17' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '18' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '19' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '20' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '21' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '22' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '4' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '23' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '24' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '25' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000496s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '26' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '27' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '28' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '29' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000354s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '30' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '31' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: id D:\xampp\htdocs\beauty\Home\Lib\Action\CenterAction.class.php 第 462 行.
+SQL: SELECT `id`,`title` FROM `nc_type` WHERE ( `pid` = '32' ) AND ( `id` NOT IN (33,34) )  [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: session_id D:\xampp\htdocs\beauty\Home\Runtime\Cache\0ca2ebdf1f9f1ebfd81086788a09e91a.php 第 20 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010966s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000762s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000715s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000609s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003042s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2013-11-02T19:17:53+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001233s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004925s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000291s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002829s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000273s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011985s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000776s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000698s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003006s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000932s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2013-11-02T19:17:53+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001081s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+
+[ 2013-11-02T19:27:27+08:00 ] 127.0.0.1 /index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001210s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004842s ]
+SQL: SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna`,`loginDays` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.002704s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 ) ORDER BY sort desc  [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\xampp\htdocs\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013350s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000840s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000737s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003208s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000884s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2013-11-02T19:27:27+08:00 ] 127.0.0.1 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001104s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+
+[ 2013-11-02T20:03:24+08:00 ] 127.0.0.1 /index.php/Public/verify?66371
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001249s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+

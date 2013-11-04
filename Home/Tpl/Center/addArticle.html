@@ -1,0 +1,70 @@
+<include file="CenterPublic:header"/>
+<link href="__PUBLIC__/Home/Css/Center_addArticle.css" rel="stylesheet" type="text/css" />
+<script>
+var typeInfo=eval('<{$typeInfo}>');
+var _URL='__URL__';
+var _PUBLIC='__PUBLIC__';
+var _APP='__APP__';
+var session_id='<{$session_id}>';
+</script>
+<script language="javascript" src="__PUBLIC__/Ueditor/ueditor.config.js"></script>
+<script language="javascript" src="__PUBLIC__/Ueditor/ueditor.all.min.js"></script>
+<script language="javascript" src="__PUBLIC__/Home/Js/Center_addArticle.js"></script>
+<script language="javascript" src="__PUBLIC__/Ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+
+<include file="CenterPublic:top"/>
+<div id="content_center">
+
+<form action="__URL__/add" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<table cellpadding="0" cellspacing="0" class="tab_edit">
+  <tr>
+    <td>分类</td>
+    <td>
+    <select name="type" id="type" class="selectBox">
+    
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td>标题</td>
+    <td><input type="text" name="title" id="title" class="inputBox" /></td>
+  </tr>
+  <tr>
+    <td>略缩图</td>
+    <td><input name="img" id="img" type="file" /></td>
+  </tr>
+  <tr>
+    <td>外链</td>
+    <td>
+    <input type="text" name="href" id="href" class="inputBox" />
+    <div id="hideArea"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>关键词</td>
+    <td><input type="text" name="keywords" id="keywords" class="inputBox" />&nbsp;&nbsp;&nbsp;&nbsp;多个关键词请用空格隔开</td>
+  </tr>
+  <tr id="contentArea">
+    <td>内容</td>
+    <td>
+	<script type="text/plain" id="contentedit" name="content"></script>
+    </td>
+  </tr>
+  <tr>
+  <td></td>
+    <td>
+    <input id="sub" type="button" value="发布" class="submitMode" />
+    <input type="reset" value="返回" class="submitMode" onclick="javascript:history.back()"/>
+    <input type="reset" value="重置" class="submitMode" /></td>
+    </tr>
+</table>
+</form>
+<!--主体-->
+
+</div>
+<div id="content_bottom"></div>
+</div>
+</div>
+</body>
+</html>

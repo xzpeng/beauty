@@ -1,0 +1,270 @@
+[ 2013-10-13T22:19:30+08:00 ] 0.0.0.0 /beauty/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002925s ]
+NOTIC: [2] PDO::__construct():  D:\PHP Project\beauty\ThinkPHP\Extend\Driver\Session\SessionDb.class.php 第 28 行.
+
+[ 2013-10-13T22:20:29+08:00 ] 0.0.0.0 /beauty/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+NOTIC: [2] PDO::__construct():  D:\PHP Project\beauty\ThinkPHP\Extend\Driver\Session\SessionDb.class.php 第 28 行.
+
+[ 2013-10-13T22:23:53+08:00 ] 0.0.0.0 /beauty/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001701s ]
+NOTIC: [2] PDO::__construct():  D:\PHP Project\beauty\ThinkPHP\Extend\Driver\Session\SessionDb.class.php 第 28 行.
+
+[ 2013-10-13T23:49:09+08:00 ] 0.0.0.0 /beauty/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+
+[ 2013-10-13T23:53:39+08:00 ] 0.0.0.0 /beauty/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+SQL: DESCRIBE nc_user [ RunTime:0.005929s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000291s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.006591s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=0 ) LIMIT 0,4   [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.077662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077858s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001343s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.013649s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001037s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018405s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001639s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001900s ]
+
+[ 2013-10-13T23:53:39+08:00 ] 0.0.0.0 /beauty/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001960s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002220s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002059s ]
+
+[ 2013-10-13T23:53:41+08:00 ] 0.0.0.0 /beauty/index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002032s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+SQL: DESCRIBE nc_user [ RunTime:0.007442s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000250s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.004441s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 )  [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\PHP Project\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020235s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001440s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001408s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001208s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006081s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001343s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001514s ]
+
+[ 2013-10-13T23:53:42+08:00 ] 0.0.0.0 /beauty/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001928s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002201s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+
+[ 2013-10-13T23:54:17+08:00 ] 0.0.0.0 /beauty/index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001576s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001795s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+SQL: DESCRIBE nc_user [ RunTime:0.006152s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000228s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.004797s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 )  [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\PHP Project\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022611s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001733s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001012s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000748s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005025s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001122s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2013-10-13T23:54:17+08:00 ] 0.0.0.0 /beauty/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001878s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002129s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+
+[ 2013-10-13T23:54:19+08:00 ] 0.0.0.0 /beauty/index.php/Index/type/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+SQL: DESCRIBE nc_user [ RunTime:0.005633s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000215s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.006182s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=1 )  [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\PHP Project\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018206s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001382s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001118s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000935s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005005s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2013-10-13T23:54:19+08:00 ] 0.0.0.0 /beauty/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001982s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+
+[ 2013-10-13T23:56:46+08:00 ] 0.0.0.0 /beauty/index.php/Index/type/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001354s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001537s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: DESCRIBE nc_user [ RunTime:0.004873s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000194s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.006262s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=2 )  [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\PHP Project\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019969s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001124s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001162s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005808s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001879s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002110s ]
+
+[ 2013-10-13T23:56:46+08:00 ] 0.0.0.0 /beauty/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002126s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+
+[ 2013-10-13T23:58:02+08:00 ] 0.0.0.0 /beauty/index.php/Index/type/id/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001546s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: DESCRIBE nc_user [ RunTime:0.006095s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000205s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.004407s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=3 )  [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\PHP Project\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018512s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001250s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001114s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000799s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005574s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001157s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2013-10-13T23:58:03+08:00 ] 0.0.0.0 /beauty/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005129s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+
+[ 2013-10-13T23:59:02+08:00 ] 0.0.0.0 /beauty/index.php/Index/type/id/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002115s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002357s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+SQL: DESCRIBE nc_user [ RunTime:0.005917s ]
+SQL: SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.000239s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `picture`,`rna` FROM `nc_user` WHERE ( id= ) LIMIT 1  
+SQL: DESCRIBE nc_type [ RunTime:0.006252s ]
+SQL: SELECT `title` FROM `nc_type` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000416s ]
+SQL: SELECT `title`,`remark`,`id` FROM `nc_type` WHERE ( pid=4 )  [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: keywords D:\PHP Project\beauty\Home\Runtime\Cache\0261350f83d3fa5728773645a92d9cfd.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025193s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002003s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001522s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007121s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001484s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001678s ]
+
+[ 2013-10-13T23:59:03+08:00 ] 0.0.0.0 /beauty/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002042s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002348s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+

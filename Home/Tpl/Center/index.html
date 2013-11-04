@@ -1,0 +1,46 @@
+<include file="CenterPublic:header"/>
+<link href="__PUBLIC__/Home/Css/Center_index_list.css" rel="stylesheet" type="text/css" />
+</head>
+
+<include file="CenterPublic:top"/>
+<div id="content_center">
+<table border="0" cellspacing="0" cellpadding="0" class="tab_list">
+  <tr class="tab_top">
+    <td>标题</td>
+    <td>类别</td>
+    <td>点击量</td>
+    <td>编辑时间</td>
+    <td>审核</td>
+    <td>推荐</td>
+    <td>操作</td>
+  </tr>
+  <volist name="list" id="vo" empty="$empty" >
+<tr>
+    <td><a href="__APP__/Article/show/id/<{$vo.id}>"><{$vo.title}></a></td>
+    <td><{$vo.type}></td>
+    <td><{$vo.hits}></td>
+    <td><{$vo.edit_time|date="y-m-d  H:i",###}></td>
+    <td>
+    <if condition="$vo.display eq 1 ">已审核
+	<else /> 审核中
+	</if>
+    </td>
+    <td>
+    <if condition="$vo.recommend eq 1 ">已推荐
+	<else /> 未推荐
+	</if>
+    </td>
+    <td><a href="__URL__/delete/id/<{$vo.id}>">删除</a>&nbsp;&nbsp;<a href="__URL__/editArticle/id/<{$vo.id}>">修改</a></td>
+  </tr>
+</volist>
+  <tr>
+    <td colspan="7" class="pageshow"><{$pageshow}></td>
+    </tr>
+</table>
+
+</div>
+<div id="content_bottom"></div>
+</div>
+</div>
+</body>
+</html>

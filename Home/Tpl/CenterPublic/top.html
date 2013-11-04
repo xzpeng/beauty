@@ -1,0 +1,36 @@
+<body>
+<div id="main">
+
+<div id="logo"></div>
+<div id="top">
+<h1 id="column">个人中心</h1>
+<div id="nav">
+<div id="nav_left"></div>
+<div id="nav_center">
+<a href="__APP__/Index/index">网站首页</a>
+<a href="__URL__/index">个人主页</a>
+</div>
+<div id="nav_right"></div>
+</div>
+</div>
+
+<div id="center">
+<div id="left">
+<ul>
+<li><img src="__PUBLIC__/Uploads/<{$picture}>" width="171" height="171" class="picture" id="uploadPic" title="点击编辑头像" /></li>
+<li class="nameh"><{$userName}>
+<if condition="$rna eq 1 ">&nbsp;&nbsp;<img  src="__PUBLIC__/Home/Images/v1.png" width="25" height="25" style="vertical-align:middle;" title="已通过实名认证" />
+</if>
+</li>
+<li>昵称：<{$nickName}></li>
+<li>性别：<{$sex}></li>
+<li>生日：<{$birthday|date="Y年m月d日",###}></li>
+<li><center><a href="__URL__/editData">修改资料</a>&nbsp;&nbsp;<a href="__URL__/editPassword">修改密码</a>&nbsp;&nbsp;<a href="__APP__/User/loginout">退出</a></center></li>
+<if condition="$rna neq 1 ">
+    <li><a href="__URL__/rna" class="addArticle">实名认证</a></li>
+</if>
+<li><a href="__URL__/addArticle" class="addArticle">发表文章</a></li>
+</ul>
+</div>
+<div id="content">
+<div id="content_top"></div>

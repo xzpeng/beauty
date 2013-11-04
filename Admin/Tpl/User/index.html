@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户管理</title>
+<script>
+var _URL='__URL__';
+</script>
+<link href="__PUBLIC__/Admin/Css/public.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/User_index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="__PUBLIC__/Admin/Js/User_index.js"></script>
+</head>
+
+<body class="childPage">
+<table cellpadding="0" cellspacing="0" class="tab_list">
+ <tr>
+    <td colspan="14">
+    <form action="__URL__/index" method="get">
+    <input type="text" name="userName" id="userName" class="inputBox" />
+    <input type="submit" name="sub" id="sub" value="搜索用户" class="submitMode" />
+    <input type="submit" name="sub2" id="sub2" value="审核队列" class="submitMode" />
+    </form>
+    </td>
+  </tr>
+  <tr>
+    <td>选择</td>
+    <td>ID</td>
+    <td>用户名</td>
+    <td>昵称</td>
+    <td>性别</td>
+    <td>年龄</td>
+    <td>地区</td>
+    <td>手机</td>
+    <td>QQ</td>
+    <td>登录</td>
+    <td>天数</td>
+    <td>评分</td>
+    <td>审核</td>
+    <td>操作</td>
+  </tr>
+  <volist name="list" id="vo">
+  <tr>
+    <td class="index1"><input name="" type="checkbox" value="" sid="<{$vo.id}>" /></td>
+    <td class="index2"><{$vo.id}></td>
+    <td class="index3"><{$vo.userName}></td>
+    <td class="index4"><{$vo.nickName}></td>
+    <td class="index5"><{$vo.sex}></td>
+    <td class="index6"><{$vo.age}></td>
+    <td class="index7"><{$vo.area}></td>
+    <td class="index8"><{$vo.mphone}></td>
+    <td class="index9">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<{$vo.qq}>&site=qq&menu=yes"><{$vo.qq}></a>
+    </td>
+    <td class="index10"><{$vo.loginTime}></td>
+    <td class="index14"><{$vo.loginDays}></td>
+    <td class="index11"><{$vo.stature_ave}>|<{$vo.face_ave}>|<{$list.liked_ave}></td>
+    <td class="index12"><div class="v_<{$vo.rna}>" sid="<{$vo.id}>"></div></td>
+    <td class="index13"><a href="__URL__/delete/id/<{$vo.id}>" onClick="return confirm('是否删除此条记录？')">删除</a>&nbsp;&nbsp;<a href="__URL__/show/id/<{$vo.id}>">查看</a></td>
+  </tr>
+  </volist>
+   <tr>
+    <td colspan="14"><{$pageshow}></td>
+    </tr>
+</table>
+
+</body>
+</html>

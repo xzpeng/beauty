@@ -1,0 +1,84 @@
+#content_center table
+{
+	padding:0px;
+	margin:0px;
+	color:#e4007f;
+	font-size:14px;
+}
+
+#content_center table td
+{
+	padding:3px;
+	margin:0px;
+}
+
+#content_center input
+{
+	
+	padding:0px 5px;
+	margin:0px;
+	color:#626262;
+	font-size:14px;
+	line-height:30px;
+}
+
+[type=radio],[type=checkbox]
+{
+	margin:0px;
+	padding:0px;
+}
+
+
+[type=text],[type=file],[type=password]
+{
+	width:200px;
+	border:solid 1px #fd028d;
+	height:30px;
+	background:#fff;
+}
+
+label
+{	
+	line-height:30px;
+	cursor:pointer;
+}
+
+select
+{
+	height:24px;
+	font-size:14px;
+	margin:0px 5px;
+	padding:0px;
+}
+
+option
+{
+	height:14px;
+	font-size:14px;
+	padding:5px 5px;
+	margin:0px;
+}
+
+#content #sub
+{
+	width:100px;
+	margin-right:20px;
+	cursor:pointer;
+	border:solid 1px #fd028d;
+	height:30px;
+	background:#fff;
+}
+
+#content #res
+{
+	width:100px;
+	cursor:pointer;
+	border:solid 1px #fd028d;
+	height:30px;
+	background:#fff;
+}
+
+.error
+{
+	color:#F00;
+}

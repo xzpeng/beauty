@@ -1,0 +1,202 @@
+<include file="Public:header" css="Article_show" js="Article_show"/>
+<script language="javascript" src="__PUBLIC__/Js/layer-v1.6.0/layer.min.js"></script>
+<script>
+var _URL='__URL__';
+var _UID='<{$list.uid}>';
+var clickObj=new Object();
+clickObj['stature']=Number('<{$list.stature}>');
+clickObj['face']=Number('<{$list.face}>');
+clickObj['liked']=Number('<{$list.liked}>');
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script src="__PUBLIC__/Home/Js/swfobject_modified.js" type="text/javascript"></script>
+</head>
+<body>
+<!--包含登录框-->
+<include file="Public:loginBox" />
+<include file="Public:top" back="block" />
+<div id="main">
+<div id="banner" style="background-color:<{$banner.bgcolor}>;">
+<a href="<{$banner.href}>" target="<{$banner.window}>">
+<if condition="$banner.swf eq 1 ">
+<!--支持swf动画-->
+<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" >
+  <param name="movie" value="__PUBLIC__/Uploads/<{$banner.img}>">
+  <param name="quality" value="high">
+  <param name="wmode" value="opaque">
+  <param name="swfversion" value="15.0.0.0">
+  <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+  <param name="expressinstall" value="__PUBLIC__/Home/Images/expressInstall.swf">
+  <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+  <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="__PUBLIC__/Uploads/<{$banner.img}>" >
+    <!--<![endif]-->
+    <param name="quality" value="high">
+    <param name="wmode" value="opaque">
+    <param name="swfversion" value="15.0.0.0">
+    <param name="expressinstall" value="__PUBLIC__/Home/Images/expressInstall.swf">
+    <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+    <div>
+      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+    </div>
+    <!--[if !IE]>-->
+  </object>
+  <!--<![endif]-->
+</object>
+<!--支持swf动画-->
+<else/>
+<img src="__PUBLIC__/Uploads/<{$banner.img}>"  />
+</if>
+</a>
+</div>
+<if condition="$list.gfrz neq 1 ">
+<div id="card">
+<div id="card_left" style="background:url(__PUBLIC__/Uploads/<{$list.cover}>) no-repeat">
+<div id="remark">
+工作经历:<br>
+<{$list.workRemark}>
+</div>
+</div>
+<div id="card_right">
+<div class="scoreMask maskBg" style="display:<{$list.islogin}>;"></div>
+<div class="scoreMask" style="display:<{$list.islogin}>;"><span id="login_btn2">登录</span>后可以参与评分,没有账号？<a href="__APP__/User/regis" target="_blank">立即注册</a></div>
+<table border="0" cellspacing="0" cellpadding="0" class="tab_card">
+  <tr>
+    <td><h1><{$list.name}>&nbsp;(<{$list.nickName}>)</h1>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="__PUBLIC__/Uploads/<{$list.picture}>" height="120" width="120" class="picture2" />
+    姓名：<{$list.name}>&nbsp;&nbsp;性别：<{$list.sex}>
+    <if condition="$list.rna eq 1 ">&nbsp;&nbsp;<img  src="__PUBLIC__/Home/Images/v1.png" width="20" height="20" style="vertical-align:middle;" title="已通过实名认证" />
+</if><br>
+    生日：<{$list.birthday|date="Y年m月d日",###}><br>
+	身高：<{$list.height}>&nbsp;cm<br>
+    体重：<{$list.weight}>&nbsp;kg<br>
+三围：<{$list.sanwei}><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    毕业院校：<{$list.graduated}><br>
+学历：<{$list.edu}><br>
+ <if condition="$list.rna eq 1 ">
+ <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<{$list.qq}>&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:<{$list.qq}>:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a><br>
+ 微博地址:&nbsp;&nbsp;<a href="<{$list.wburl}>" target="_blank"><{$list.wburl}></a>
+ </td>
+  </tr>
+  <tr>
+    <td>
+   <table border="0" cellspacing="0" cellpadding="0" class="tab_pf" id="scoreDiv">
+   <tr>
+    <td colspan="6">我的评价：</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;平均统计：</td>
+  </tr>
+  <tr>
+    <td>身材：</td>
+    <td><div class="wjx" id="stature_1"></div></td>
+    <td><div class="wjx" id="stature_2"></div></td>
+    <td><div class="wjx" id="stature_3"></div></td>
+    <td><div class="wjx" id="stature_4"></div></td>
+    <td><div class="wjx" id="stature_5"></div></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;平均分：<span id="stature_ave"><{$list.stature_ave}></span></td>
+  </tr>
+  <tr>
+    <td>面容：</td>
+   	<td><div class="wjx" id="face_1"></div></td>
+    <td><div class="wjx" id="face_2"></div></td>
+    <td><div class="wjx" id="face_3"></div></td>
+    <td><div class="wjx" id="face_4"></div></td>
+    <td><div class="wjx" id="face_5"></div></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;平均分：<span id="face_ave"><{$list.face_ave}></span></td>
+  </tr>
+  <tr>
+    <td>喜欢程度：</td>
+    <td><div class="wjx" id="liked_1"></div></td>
+    <td><div class="wjx" id="liked_2"></div></td>
+    <td><div class="wjx" id="liked_3"></div></td>
+    <td><div class="wjx" id="liked_4"></div></td>
+    <td><div class="wjx" id="liked_5"></div></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;平均分：<span id="liked_ave"><{$list.liked_ave}></span></td>
+  </tr>
+</table>
+ <div class="xlwb"><a version="1.0" class="qzOpenerDiv" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_likeurl" target="_blank">赞</a><script  src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20110603&style=3&showcount=1&width=130&height=30" charset="utf-8" defer ></script></div>
+    <div class="xlwb"><wb:like type="number"></wb:like></div>
+    </td>
+  </tr>
+ <else />
+ <font color="#FF0000" style="font-weight:bold;">注意：该用户尚未通过实名审核,暂不能进行在线联系和在线评分</font>
+ </td>
+  </tr>
+</if>
+
+  <tr>
+    <td><h1>职业：<{$list.job}></h1></td>
+  </tr>
+  <tr>
+    <td style="text-align:center;background-color:<{$ill.bgcolor}>;">
+    <a href="<{$ill.href}>" target="<{$ill.window}>">
+<if condition="$ill.swf eq 1 ">
+<!--支持swf动画-->
+<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" >
+  <param name="movie" value="__PUBLIC__/Uploads/<{$ill.img}>">
+  <param name="quality" value="high">
+  <param name="wmode" value="opaque">
+  <param name="swfversion" value="15.0.0.0">
+  <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+  <param name="expressinstall" value="__PUBLIC__/Home/Images/expressInstall.swf">
+  <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+  <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="__PUBLIC__/Uploads/<{$ill.img}>" >
+    <!--<![endif]-->
+    <param name="quality" value="high">
+    <param name="wmode" value="opaque">
+    <param name="swfversion" value="15.0.0.0">
+    <param name="expressinstall" value="__PUBLIC__/Home/Images/expressInstall.swf">
+    <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+    <div>
+      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+    </div>
+    <!--[if !IE]>-->
+  </object>
+  <!--<![endif]-->
+</object>
+<!--支持swf动画-->
+<else/>
+<img src="__PUBLIC__/Uploads/<{$ill.img}>"/>
+</if>
+</a>
+    </td>
+  </tr>
+</table>
+
+</div>
+</div>
+</if>
+
+<div id="titleBox">
+<div id="title">
+<{$list.title}>
+</div>
+<div id="info">浏览量：<{$list.hits}>人次&nbsp;&nbsp;作者：<{$list.promulgator}>
+<if condition="$list.gfrz eq 1 ">
+   &nbsp;<img src="__PUBLIC__/Home/Images/gfrz.png" style="vertical-align:middle;" width="53" height="12" title="美人网官方发布"> 
+  </if>
+  <if condition="$list.rna eq 1 ">&nbsp;<img  src="__PUBLIC__/Home/Images/v1.png" width="12" height="12" style="vertical-align:middle;" title="已通过实名认证" />
+</if>
+&nbsp;&nbsp;编辑时间：<{$list.edit_time|date="Y-m-d  H:i",###}></div>
+</div>
+<div id="content">
+<{$list.content}>
+</div>
+</div>
+<div id="bottom">
+<include file="Public:bottom"/>
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>

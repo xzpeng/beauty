@@ -1,0 +1,60 @@
+.tab_list td
+{
+	height:30px;
+	line-height:30px;
+}
+
+.index1
+{
+	width:4%;
+}
+
+.index2
+{
+	width:6%;
+}
+
+.index3
+{
+	width:6%;
+}
+
+.index4
+{
+	width:22%;
+}
+
+.index5
+{
+	width:22%;
+}
+
+.index6
+{
+	width:6%;
+}
+
+.index7
+{
+	width:12%;
+}
+
+.index8
+{
+	width:7%;
+}
+
+.index9
+{
+	width:15%;
+}
+
+#sort
+{
+	width:50px;
+}
+
+#title
+{
+	width:170px;
+}

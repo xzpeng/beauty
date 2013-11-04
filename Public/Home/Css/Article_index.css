@@ -1,0 +1,135 @@
+body
+{
+	background:#f0f0f0;
+}
+
+#main
+{
+	margin:0px auto;
+}
+
+.rows
+{
+	float:left;
+	margin:0px 10px;
+	width:285px;
+	padding-bottom:20px;
+}
+
+.items
+{
+	background:#fff;
+	margin-top:20px;
+	box-shadow: 0 0 10px #ddd;
+	opacity:0;
+}
+
+.items a
+{
+	text-decoration:none;
+	color:#555;
+	font-size:12px;
+	font-family:微软雅黑;
+	display:block;
+}
+
+.items .imgDiv
+{
+	width:285px;
+	background:#f0f0f0 url(../Images/loading.gif) no-repeat center center;
+}
+
+.items .titleDiv
+{
+	width:273px;
+	padding:0px 6px;
+	padding-top:8px;
+}
+
+.items .titleDiv:hover
+{
+	text-decoration:underline;
+}
+
+.items span
+{
+	color:#555;
+	width:273px;
+	display:block;
+	padding:5px 6px;
+}
+
+.items p
+{
+	display:block;
+	padding:10px;
+}
+
+.items img
+{
+	border:none;
+	padding:0px;
+	margin:0px;
+}
+
+#listTop
+{
+	background:#333;
+	padding:0px 15px;
+	width:255px;
+	line-height:30px;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+}
+
+#listContent
+{
+	width:255px;
+	padding:15px;
+}
+
+#listContent a
+{
+	padding:0px 10px;
+	float:left;
+	border:solid 1px #e5e5e5;
+	line-height:25px;
+	height:25px;
+	margin:5px;
+	background:url(../Images/typelist_bg.png) repeat-x 0px 0px;
+}
+
+#listContent a:hover
+{
+	color:#fff;
+	background:url(../Images/typelist_bg.png) repeat-x 0px -25px;
+}
+
+#mesg
+{
+	position:absolute;
+	z-index:100;
+	background:url(../Images/tipbg.png) no-repeat;
+	display:none;
+	height:30px;
+	width:186px;
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	line-height:30px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#banner2
+{
+	margin:0px auto;
+	margin-top:10px;
+	text-align:center;
+}
+
+#banner2 img
+{
+	border:none;
+}

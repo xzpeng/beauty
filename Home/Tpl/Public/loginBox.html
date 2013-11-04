@@ -1,0 +1,41 @@
+<div id="loginBox">
+<div id="login_left">
+<h2>用户登录</h2>
+<form action="__APP__/User/doLogin" method="post">
+<table>
+  <tr>
+    <td>用户名</td>
+    <td><input type="text" name="userName" id="userName" /></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>密码</td>
+    <td><input type="password" name="password" id="password" /></td>
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>验证码</td>
+    <td><input type="text" name="verify" id="verify" /></td>
+    <td valign="middle"><img src="__APP__/Public/verify" class="verifyImg" /></td>
+  </tr> 
+  <tr>
+    <td colspan="3" align="center"><input name="autoLogin" id="autoLogin" type="checkbox" value="true" />30天内自动登录</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><input type="submit" value="登录" id="doLogin" /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1565816819&site=qq&menu=yes">忘记密码？联系管理员</a></td>
+    </tr>
+</table>
+</form>
+</div>
+<div id="login_center"></div>
+<div id="login_close"></div>
+<div id="login_right">
+<h2>注册</h2>
+<br /><br />
+还没有账号？
+<a href="__APP__/User/regis" target="_blank" class="regLink">立即注册</a>
+</div>
+</div>
+<div id="loginBg">
+</div>

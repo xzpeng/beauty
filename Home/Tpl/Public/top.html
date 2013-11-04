@@ -1,0 +1,51 @@
+<div id="top">
+
+    <div id="loginDiv">
+        <div id="top_list"></div>
+        <form action="__APP__/Article/index" method="get">
+            <input name="keywords" type="text" id="search_text" value="<{$keywords}>" />
+            <input name="" type="submit" value="" id="search_btn" />
+        </form>
+        <div style="display:<{$isLogin}>;">
+            <div id="login_btn" class="top_login">登录</div>
+            <a href="__APP__/User/regis" target="_blank" class="top_reg">注册</a>
+        </div>
+        <div style="display:<{$myInfo}>;">
+            <a href="__APP__/Center/index"><img src="__PUBLIC__/Uploads/<{$picture}>" height="30" width="30" class="top_picture"/></a>
+            <a href="__APP__/Center/index" class="top_reg"><{$userName}>
+                <if condition="$rna eq 1 ">&nbsp;&nbsp;<img  src="__PUBLIC__/Home/Images/v1.png" width="14" height="14" style="vertical-align:middle;" title="已通过实名认证" />
+                </if>
+            </a>
+            <span class="top_reg">等级</span><a class="top_reg" href="#">签到</a>
+            <a href="__APP__/User/loginout" class="top_reg">退出</a>
+        </div>
+        <a href="__APP__/Index/index" class="top_reg">首页</a>
+        <a href="__APP__/Index/type/id/1" class="top_reg">美人</a>
+        <a href="__APP__/Index/type/id/2" class="top_reg">模特</a>
+        <a href="__APP__/Index/type/id/3" class="top_reg">美课</a>
+        <a href="__APP__/Index/type/id/4" class="top_reg">时尚</a>
+        <a href="javascript:history.back()" style="display:[back];" class="top_reg" id="back_btn">返回</a>
+    </div>
+
+    <div id="bdshareDiv">
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+            <a class="bds_qzone"></a>
+            <a class="bds_tsina"></a>
+            <a class="bds_tqq"></a>
+            <a class="bds_renren"></a>
+            <a class="bds_t163"></a>
+            <span class="bds_more"></span>
+            <a class="shareCount"></a>
+        </div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=768886" ></script>
+        <script type="text/javascript" id="bdshell_js"></script>
+        <script type="text/javascript">
+            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+        </script>
+        <!-- Baidu Button END -->
+    </div>
+
+</div>
+
+<div class="clear"></div>

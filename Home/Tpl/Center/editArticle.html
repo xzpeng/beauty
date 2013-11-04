@@ -1,0 +1,79 @@
+<include file="CenterPublic:header"/>
+<link href="__PUBLIC__/Home/Css/Center_addArticle.css" rel="stylesheet" type="text/css" />
+<script>
+var typeInfo=eval('<{$typeInfo}>');
+var _URL='__URL__';
+var _PUBLIC='__PUBLIC__';
+var _APP='__APP__';
+var session_id='<{$session_id}>';
+</script>
+
+<script language="javascript" src="__PUBLIC__/Ueditor/ueditor.config.js"></script>
+<script language="javascript" src="__PUBLIC__/Ueditor/ueditor.all.min.js"></script>
+<script language="javascript" src="__PUBLIC__/Home/Js/Center_addArticle.js"></script>
+<script language="javascript" src="__PUBLIC__/Ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+
+<include file="CenterPublic:top"/>
+<div id="content_center">
+
+<form action="__URL__/update" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<volist name="list" id="vo">
+<input type="hidden" name="id" value="<{$vo.id}>"/>
+<table cellpadding="0" cellspacing="0" class="tab_edit">
+  <tr>
+    <td>分类</td>
+    <td>
+    <select name="type" id="type" class="selectBox">
+    
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td>标题</td>
+    <td><input type="text" name="title" id="title" value="<{$vo.title}>" class="inputBox" /></td>
+  </tr>
+  <tr>
+    <td>略缩图</td>
+    <td><input name="img" id="img" type="file" />
+    <if condition='$vo.img neq  "" '>
+   <a href="__PUBLIC__/Uploads/<{$userPath}><{$vo.img}>" target="_blank"><img src="__PUBLIC__/Uploads/<{$userPath}>thumb/258_<{$vo.img}>" height="100" /></a>&nbsp;&nbsp;<input name="deleteImg" type="checkbox" value="true" />删除略缩图
+    </if>
+    </td>
+  </tr>
+  <tr>
+    <td>外链</td>
+    <td>
+    <input type="text" name="href" id="href" class="inputBox" value="<{$vo.href}>" />
+    <div id="hideArea"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>关键词</td>
+    <td><input type="text" name="keywords" id="keywords" class="inputBox" value="<{$vo.keywords}>" />&nbsp;&nbsp;&nbsp;&nbsp;多个关键词请用空格隔开</td>
+  </tr>
+  <tr id="contentArea">
+    <td>内容</td>
+    <td>
+	<script type="text/plain" id="contentedit" name="content"><{$vo.content}></script>
+    </td>
+  </tr>
+  <tr>
+  <td></td>
+    <td>
+    <input id="sub" type="button" value="保存" class="submitMode" />
+    <input type="reset" value="返回" class="submitMode" onclick="javascript:history.back()"/>
+    <input type="reset" value="重置" class="submitMode" />
+    </td>
+    </tr>
+    </volist>
+</table>
+</form>
+<!--主体-->
+
+</div>
+<div id="content_bottom"></div>
+</div>
+</div>
+</body>
+</html>

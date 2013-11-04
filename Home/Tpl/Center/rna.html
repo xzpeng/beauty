@@ -1,0 +1,65 @@
+<include file="CenterPublic:header"/>
+<link href="__PUBLIC__/Home/Css/Center_addArticle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<include file="CenterPublic:top"/>
+<div id="content_center">
+<!--主体-->
+<br />
+<br />
+<br />
+ <br />
+<if condition="$lineup eq 1">
+ <center>
+ <h2>正在排队中...</h2><br/>
+   <p>前方还有<{$linelength}>人在排队，请耐心等待</p>
+   </center>
+<else />
+    <form action="__URL__/doRna" method="post" enctype="multipart/form-data">
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="tab_edit">
+<tr>
+    <td colspan="3" align="center"><h2>实名认证</h2></td>
+    </tr>
+  <tr>
+    <td>*</td>
+    <td>身份证号码</td>
+    <td><input name="IDNum" type="text"></td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>身份证正面上传</td>
+    <td><input name="IDCard_a" type="file"></td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>身份证反面上传</td>
+    <td><input name="IDCard_b" type="file"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>审核时间</td>
+    <td>1-3个工作日内(提交审核后将进入排队状态，排队期间无法再次提交)</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><input type="submit" name="button" id="button" value="提交"></td>
+    </tr>
+</table>
+</form>
+</if>
+<br />
+<br />
+<p>
+<b>认证必读：</b>
+<br />
+<br />
+1、注册时填写的真实姓名、出生日期、详细地址等信息需要和身份证上的信息保持一致，如果不一致请先<a href="__APP__/Center/editData">修改</a>后再提交审核。<br />
+2、头像、封面形象和个人资料完善度同样也可能会影响审核结果。<br />
+3、实名认证通过后您的用户名上将会出现&nbsp;<img src="__PUBLIC__/Home/Images/v1.png" width="25" height="25" />&nbsp;认证图标，不通过将会重新返回上传提交界面。
+</p>
+<!--主体-->
+</div>
+<div id="content_bottom"></div>
+</div>
+</div>
+</body>
+</html>

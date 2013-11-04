@@ -1,0 +1,25 @@
+body
+{
+	background:url(../Images/class3_bg.jpg) no-repeat center 45px;
+	background-color:#383949;
+}
+
+#main
+{
+	width:1366px;
+	margin:0px auto;
+	height:392px;
+	padding:170px;
+}
+
+.type_list
+{
+	width:980px;
+	margin:0px auto;
+	margin-left:100px;
+}
+
+#item4
+{
+	clear:both;
+}

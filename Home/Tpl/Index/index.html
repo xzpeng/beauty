@@ -1,0 +1,58 @@
+<include file="Public:header" css="Index_index" js="Index_index" />
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=7&amp;pos=right&amp;uid=768886" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+<!--包含登录框-->
+<include file="Public:loginBox" />
+<div id="main">
+<div id="attention">
+<div id="wb">
+<wb:follow-button uid="3194404213" type="red_2" width="136" height="24" ></wb:follow-button>
+</div>
+</div>
+
+
+<ul>
+<li id="item0">
+<div id="logo">
+<div id="login">
+<div id="login_box">
+<form action="__APP__/Article/index" method="get">
+<input name="keywords" type="text" id="search_text" />
+<input name="" type="submit" value="" id="search_btn" />
+</form>
+<div id="login_btn" class="index_login">登录</div>
+<a href="__APP__/User/regis" id="login_reg" target="_blank">注册</a>
+<a href="__APP__/User/snsLogin?type=qq">QQ</a>
+<a href="__APP__/User/snsLogin?type=tencent">腾讯微博</a>
+</div>
+</div>
+</div>
+</li>
+<volist name="list" id="vo" key="kid">
+<a href="__URL__/type/id/<{$vo.id}>">
+<li id="item<{$kid}>">
+<p><{$vo.remark}></p>
+</li>
+</a>
+</volist>
+</ul>
+
+<div class="clear"></div>
+
+<div id="bottom">
+<include file="Public:bottom" />
+</div>
+
+</div>
+
+</body>
+</html>

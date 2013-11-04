@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>信息管理</title>
+<script>
+var typeInfo=eval('<{$typeInfo}>');
+var _URL='__URL__';
+</script>
+<link href="__PUBLIC__/Admin/Css/public.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/Article_index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="__PUBLIC__/Admin/Js/Article_index.js"></script>
+</head>
+
+<body class="childPage">
+<table cellpadding="0" cellspacing="0" class="tab_list">
+  <tr>
+    <td colspan="12" id="tab_top">
+    <form action="__URL__/index" method="get">
+     类型：
+    <select name="id" id="type" class="selectBox">
+    <option value="">全部</option>
+    </select>
+    关键词:
+    <input name="keywords" type="text" class="inputBox" />
+   推荐:
+     <select name="recommend" class="selectBox">
+      <option value="">不限</option>
+    <option value="1">仅显示推荐</option>
+     <option value="2">仅显示未推荐</option>
+    </select>
+    外链:
+     <select name="href" class="selectBox">
+      <option value="">不限</option>
+    <option value="1">仅显示外链</option>
+     <option value="2">仅显示未外链</option>
+    </select>
+     排序:
+    <select name="sort" class="selectBox">
+     <option value="">不限</option>
+    <option value="desc" selected="selected">递减</option>
+     <option value="asc">递增</option>
+    </select>
+    编辑时间:
+    <select name="edit_time" class="selectBox">
+     <option value="">不限</option>
+    <option value="desc" selected="selected">递减</option>
+     <option value="asc">递增</option>
+    </select>
+    人气：
+     <select name="hits" class="selectBox">
+      <option value="">不限</option>
+    <option value="desc">递减</option>
+     <option value="asc">递增</option>
+    </select>
+   <input type="submit" value="搜索" class="submitMode" />
+   </form>
+    </td>
+  </tr>
+  <tr>
+    <td>选择</td>
+    <td>ID</td>
+    <td>排序</td>
+    <td>标题</td>
+    <td>类型</td>
+    <td>编辑时间</td>
+    <td>发布者</td>
+    <td>点击量</td>
+    <td>推荐</td>
+    <td>外链</td>
+    <td>显示</td>
+    <td>操作</td>
+  </tr>
+  <volist name="list" id="vo">
+  <tr>
+    <td class="index1"><input name="" type="checkbox" value="" sid="<{$vo.id}>" /></td>
+    <td class="index2"><{$vo.id}></td>
+    <td class="index3"><{$vo.sort}></td>
+    <td class="index4"><{$vo.title}></td>
+    <td class="index5"><{$vo.type}></td>
+    <td class="index6"><{$vo.edit_time|date="y-m-d  H:i",###}></td>
+    <td class="index7"><{$vo.promulgator}></td>
+    <td class="index8"><{$vo.hits}></td>
+    <td class="index9"><div class="recommend_<{$vo.recommend}>" sid="<{$vo.id}>"></div></td>
+    <td class="index10"><a <{$vo.href}> target="_bank" style="color:<{$vo.haveHref}>">外链</a></td>
+    <td class="index11"><div class="display_<{$vo.display}>" sid="<{$vo.id}>"></div></td>
+    <td class="index12"><a href="__URL__/delete/id/<{$vo.id}>" onClick="return confirm('是否删除此条记录？')">删除</a>&nbsp;&nbsp;<a href="__URL__/edit/id/<{$vo.id}>">编辑</a></td>
+  </tr>
+  </volist>
+  <tr>
+    <td colspan="12"><{$pageshow}></td>
+  </tr>
+</table>
+
+</body>
+</html>

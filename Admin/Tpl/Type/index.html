@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>信息管理</title>
+<script>
+var _PID='<{$pid}>';
+var _URL='__URL__';
+</script>
+<link href="__PUBLIC__/Admin/Css/public.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/Type_index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="__PUBLIC__/Admin/Js/Type_index.js"></script>
+</head>
+
+<body class="childPage">
+<table border="0" cellpadding="0" cellspacing="0" class="tab_list">
+  <tr>
+    <td colspan="9" id="pathLink">
+    <volist name="pathHtml" id="html">
+	<a href="__URL__/index/pid/<{$html.pid}>"><{$html.title}></a>&nbsp;/&nbsp;
+	</volist>
+    </td>
+  </tr>
+  <tr>
+    <td>选择</td>
+    <td>ID</td>
+    <td>排序</td>
+    <td>标题</td>
+    <td>描述</td>
+    <td>子项</td>
+    <td>编辑时间</td>
+    <td>显示</td>
+    <td>操作</td>
+  </tr>
+  <volist name="list" id="vo">
+   <tr>
+    <td class="index1"><input type="checkbox" name="<{$vo.id}>" sid="<{$vo.id}>" /></td>
+    <td class="index2"><{$vo.id}></td>
+    <td class="index3"><{$vo.sort}></td>
+    <td class="index4"><a href="__URL__/index/pid/<{$vo.id}>"><{$vo.title}></a></td>
+    <td class="index5"><{$vo.remark}></td>
+    <td class="index6"><{$vo.child}></td>
+    <td class="index7"><{$vo.edit_time|date="y-m-d  H:i",###}></td>
+    <td class="index8"><div class='display_<{$vo.display}>' sid='<{$vo.id}>'></div></td>
+    <td class="index9"><a href="__URL__/delete/id/<{$vo.id}>" onClick="return confirm('是否删除此条记录？')">删除</a>&nbsp;&nbsp;
+    <a href="__URL__/edit/id/<{$vo.id}>">编辑</a>&nbsp;&nbsp;<a href="__APP__/Article/index/id/<{$vo.id}>">管理</a>&nbsp;&nbsp;<a href="__APP__/Article/add/id/<{$vo.id}>">
+    发布</a>
+    </td>
+  </tr>
+  </volist>
+  
+  <tr>
+    <td colspan="9"><{$pageshow}></td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <form action="__URL__/add" method="post" name="form1" id="form1">
+    <td><input type="text" name="sort" id="sort" class="inputBox" /></td>
+    <td><input type="text" name="title" id="title" class="inputBox" /></td>
+    <td><textarea name="remark" id="remark" cols="25" rows="2" class="textareaBox"></textarea></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div class="display_1"><input type="hidden" name="display" id="display" value="1" /></div></td>
+    <input type="hidden" name="pid" value="<{$pid}>"/>
+    <td><input type="submit" value="添加" class="submitMode" /></td>
+    </form>
+  </tr>
+</table>
+
+</body>
+</html>

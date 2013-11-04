@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NCMS—星云网站内容管理系统首页</title>
+<link href="__PUBLIC__/Admin/Css/public.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="__PUBLIC__/Js/jquery-1.9.1.min.js"></script>
+<script language="javascript" src="__PUBLIC__/Js/layer-v1.6.0/layer.min.js"></script>
+<script language="javascript" src="__PUBLIC__/Admin/Js/jquery-1.9.1-min-cloud.js"></script>
+<script language="javascript" src="__PUBLIC__/Admin/Js/cloud.js"></script>
+<link href="__PUBLIC__/Admin/Css/Index_index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="__PUBLIC__/Admin/Js/Index_index.js"></script>
+
+</head>
+
+<body>
+
+<!--整体-->
+<div id="main">
+
+<!--头部-->
+<div id="top">
+<a href="__APP__/Index/index" id="logo"><img src="__PUBLIC__/Admin/Images/logo.png" width="289" height="30" /></a>
+<div id="loginInfo">
+  <a href="__ROOT__/index.php" target="_blank">网站首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1181412758&site=qq&menu=yes">技术支持</a>&nbsp;&nbsp;&nbsp;&nbsp;IP：<{$myIp}>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><{$adInfo['adName']}></a>&nbsp;&nbsp;&nbsp;&nbsp;<{$adInfo['adPost']}>&nbsp;&nbsp;&nbsp;&nbsp;<a href="__APP__/Administrator/logout">退出</a>
+</div>
+</div>
+<!--头部-->
+<div class="clear"></div>
+<!--任务导航区-->
+<div id="nav">
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="menuDisplay">收起菜单</td>
+    <td id="taskTitle">当前：欢迎使用</td>
+    <td valign="middle"><input name="" type="checkbox" value="" id="selectAll" /><label for="selectAll">全选</label></td>
+    <td><input name="" type="checkbox" value="" id="selectInvert" /><label for="selectInvert">反选</label></td>
+    <td><div id="delete" class="nav_link">删除</div></td>
+    <td><div id="on" class="nav_link">ON</div></td>
+    <td><div id="off" class="nav_link">OFF</div></td>
+    <td><div id="recommend" class="nav_link">推荐</div></td>
+    <td><div id="refresh" class="nav_link">刷新</div></td>
+    <td><div id="back" class="nav_link">后退</div></td>
+    <td><div id="home" class="nav_link">主页</div></td>
+     <td><div id="hideTop" class="nav_link">隐藏顶部</div></td>
+  </tr>
+</table>
+
+</div>
+<div id="nav_deepcolor"></div>
+<!--任务导航区-->
+
+<!--左侧分类-->
+<div id="left">
+<ul>
+<li><a href="__APP__/Type/index" target="childPage" class="to_right">分类管理</a></li>
+<li class="fgline"></li>
+<li><a href="#" class="to_bottom" downList='downlist0'>信息管理</a></li>
+<div id="downlist0" class="downlist">
+<li><a href="__APP__/Article/index" target="childPage" class="to_right">管理列表</a></li>
+<li class="fgline"></li>
+<li><a href="__APP__/Article/add" target="childPage" class="to_right">发布信息</a></li>
+</div>
+<li class="fgline"></li>
+<li><a href="__APP__/User/index" target="childPage" class="to_right">用户管理</a></li>
+<li class="fgline"></li>
+<li><a href="__APP__/Ad/add" target="childPage" class="to_right">发布广告</a></li>
+<li class="fgline"></li>
+<li><a href="http://tongji.baidu.com" target="childPage" class="to_right">百度统计</a></li>
+<li class="fgline"></li>
+</ul>
+</div>
+<!--左侧分类-->
+<iframe id="childPage" name="childPage" src="" frameborder="0" scrolling="auto"></iframe>
+</div>
+<!--整体-->
+</body>
+</html>

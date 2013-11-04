@@ -1,0 +1,236 @@
+body
+{
+	background-repeat:repeat-x;
+	background-color:#525460;
+}
+
+#main
+{
+	width:1366px;
+	margin:0px auto;
+}
+
+#bottom
+{
+	height:89px;
+	width:1366px;
+	background:url(../Images/bottom_bg.jpg) repeat-x;
+}
+
+ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	clear:both;
+}
+
+li
+{
+	width:273px;
+	height:670px;
+	float:left;
+	border-right:solid 1px #000;
+	cursor:pointer;
+}
+
+#item0
+{
+	width:271px;
+	border-right:none;
+	background-image:url(../Images/bg.jpg);
+}
+
+#item1
+{
+	background:url(../Images/item0.jpg) no-repeat;
+}
+
+#item2
+{
+	background:url(../Images/item1.jpg) no-repeat;
+}
+
+#item3
+{
+	background:url(../Images/item2.jpg) no-repeat;
+}
+
+#item4
+{
+	background:url(../Images/item3.jpg) no-repeat;
+	border-right:none;
+}
+
+#item1:hover
+{
+	background-position:-273px 0px;
+}
+
+#item2:hover
+{
+	background-position:-273px 0px;
+}
+
+#item3:hover
+{
+	background-position:-273px 0px;
+}
+
+#item4:hover
+{
+	background-position:-273px 0px;
+}
+
+li p
+{
+	margin:0px;
+	padding:0px 10px;
+	line-height:18px;
+	height:71px;
+	margin-top:450px;
+	display:block;
+	background-image:url(../Images/colorblock.png);
+	background-repeat:no-repeat;
+	color:#fff;
+	padding-top:14px;
+}
+
+#item1 p
+{
+	background-position:0px top;
+}
+
+#item2 p
+{
+	background-position:-273px;
+}
+
+#item3 p
+{
+	background-position:-546px;
+}
+
+#item4 p
+{
+	background-position:-819px;
+}
+
+#logo
+{
+	background:url(../Images/logo.png) no-repeat center top;
+	width:271px;
+	height:195px;
+	margin-top:340px;
+	padding-top:110px;
+}
+
+#login
+{
+	height:55px;
+	padding-top:30px;
+	background:url(../Images/colorblock.png) no-repeat;
+}
+
+#login input
+{
+	float:left;
+}
+
+#login a
+{
+	float:left;
+}
+
+#login_box
+{
+	width:239px;
+	height:24px;
+	margin:0px auto;
+}
+
+#login #search_text
+{
+	width:110px;
+	height:24px;
+	line-height:24px;
+	background:url(../Images/search_login.png) no-repeat;
+	border:none;
+	margin:0px;
+	padding:0px 5px;
+	font-size:12px;
+}
+
+#login #search_btn
+{
+	width:35px;
+	height:24px;
+	background:url(../Images/search_login.png) no-repeat -120px 0px;
+	border:none;
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+}
+
+#login .index_login
+{
+	width:40px;
+	background:url(../Images/search_login.png) no-repeat -155px 0px;
+	height:20px;
+	color:#fff;
+	line-height:20px;
+	text-align:center;
+	margin:2px 5px;
+	float:left;
+	cursor:pointer;
+}
+
+#login #login_reg
+{
+	width:24px;
+	height:20px;
+	line-height:20px;
+	color:#fff;
+	text-decoration:none;
+	margin-top:2px;
+}
+
+#login #login_reg:hover
+{
+	text-decoration:underline;
+}
+
+#bottom_content
+{
+	margin-left:273px;
+	color:#fff;
+}
+
+
+#bottom_content a
+{
+	color:#FFF;
+	font-size:12px;
+	text-decoration:none;
+}
+
+#bottom_content a:hover
+{
+	text-decoration:underline;
+}
+
+#attention
+{
+	height:25px;
+	color:#fff;
+}
+
+#wb
+{
+	float:right;
+}
+
+#fx
+{
+	float:right;
+}

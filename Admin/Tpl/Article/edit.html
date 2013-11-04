@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>编辑信息</title>
+<script>
+var typeInfo=eval('<{$typeInfo}>');
+var _URL='__URL__';
+var _PUBLIC='__PUBLIC__';
+var _APP='__APP__';
+var session_id='<{$session_id}>';
+</script>
+<link href="__PUBLIC__/Admin/Css/public.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/Css/Article_edit.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="__PUBLIC__/Ueditor/ueditor.config.js"></script>
+<script language="javascript" src="__PUBLIC__/Ueditor/ueditor.all.min.js"></script>
+<script language="javascript" src="__PUBLIC__/Admin/Js/Article_edit.js"></script>
+<script language="javascript" src="__PUBLIC__/Ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+
+<body class="childPage">
+<form action="__URL__/update" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<table cellpadding="0" cellspacing="0" class="tab_edit">
+<volist name="list" id="vo">
+ <tr>
+    <td>ID</td>
+    <td>
+    <{$vo.id}>
+     <input type="hidden" name="id" value="<{$vo.id}>" />
+    </td>
+  </tr>
+  <tr>
+    <td>分类</td>
+    <td>
+    <select name="type" id="type" class="selectBox">
+    
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td>标题</td>
+    <td><input type="text" name="title" id="title" class="inputBox" value="<{$vo.title}>" /></td>
+  </tr>
+  <tr>
+    <td>略缩图</td>
+    <td><input name="img" id="img" type="file" />
+    <if condition='$vo.img neq  "" '>
+   <a href="__PUBLIC__/Uploads/<{$userPath}><{$vo.img}>" target="_blank"><img src="__PUBLIC__/Uploads/<{$userPath}>thumb/258_<{$vo.img}>" height="100" /></a>&nbsp;&nbsp;<input name="deleteImg" type="checkbox" value="true" />删除略缩图
+    </if>
+</td>
+  </tr>
+  <tr>
+    <td>排序</td>
+    <td><input type="text" name="sort" id="sort" class="inputBox" value="<{$vo.sort}>" /></td>
+  </tr>
+  <tr>
+    <td>外链</td>
+    <td>
+    <input type="text" name="href" id="href" class="inputBox" value="<{$vo.href}>" />
+    <div id="hideArea"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>关键词</td>
+    <td><input type="text" name="keywords" id="keywords" class="inputBox" value="<{$vo.keywords}>" />&nbsp;&nbsp;&nbsp;&nbsp;多个关键词请用空格隔开</td>
+  </tr>
+  <tr>
+    <td>显示</td>
+    <td><div class="display_<{$vo.display}>"><input type="hidden" name="display" id="display" value="<{$vo.display}>" /></div></td>
+  </tr>
+  <tr>
+    <td>推荐</td>
+    <td><div class="recommend_<{$vo.recommend}>"><input type="hidden" name="recommend" id="recommend" value="<{$vo.recommend}>" /></div></td>
+  </tr>
+  <tr id="contentArea">
+    <td>内容</td>
+    <td>
+	<script type="text/plain" id="content" name="content"><{$vo.content}></script>
+    </td>
+  </tr>
+  <tr>
+    <td>编辑时间</td>
+    <td><input type="text" name="edit_time" id="edit_time" class="inputBox" />&nbsp;&nbsp;&nbsp;&nbsp;完整格式：2013-01-01-23-02-59(年-月-日-时-分-秒)，默认为自动生成</td>
+  </tr>
+  </volist>
+  <tr>
+  <td></td>
+    <td>
+    <input id="subType" name="" type="hidden" value="true" />
+    <input id="sub" type="button" value="提交" class="submitMode" />
+    <input id="com" type="button" value="完成" class="submitMode" />
+    <input type="reset" value="重置" class="submitMode" /></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

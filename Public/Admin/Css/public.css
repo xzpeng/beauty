@@ -1,0 +1,226 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#505050;
+	background:#ffffff;
+}
+
+a
+{
+	color:#606060;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color:#000000;
+	text-decoration:underline;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.tab_list
+{
+	width:100%;
+	border-bottom:solid 1px #d3d3d3;
+	border-left:solid 1px #d3d3d3;
+}
+
+.tab_list td
+{
+	border:solid 1px #d3d3d3;
+	border-left:none;
+	border-bottom:none;
+	padding:0px 5px;
+	word-break: break-all;
+	word-wrap:break-word;
+}
+
+.childPage
+{
+	margin-right:15px;
+	margin-top:15px;
+	margin-left:15px;
+	padding-bottom:100px;
+}
+
+.display_0
+{
+	width:62px;
+	height:22px;
+	margin:auto auto;
+	cursor:pointer;
+	background:url(../Images/display_0.png) no-repeat 0px 0px;
+}
+
+.display_1
+{
+	width:62px;
+	height:22px;
+	cursor:pointer;
+	margin:auto auto;
+	background:url(../Images/display_1.png) no-repeat 0px 0px;
+}
+
+.recommend_0
+{
+	width:62px;
+	height:22px;
+	margin:auto auto;
+	cursor:pointer;
+	background:url(../Images/display_0.png) no-repeat 0px 0px;
+}
+
+.recommend_1
+{
+	width:62px;
+	height:22px;
+	cursor:pointer;
+	margin:auto auto;
+	background:url(../Images/display_1.png) no-repeat 0px 0px;
+}
+
+.deepBackground
+{
+	background-color:#f7f7f7;
+}
+
+.overDeepBackground
+{
+	background-color:#f0f0f0;
+}
+
+.inputBox
+{
+	height:25px;
+	font-size:14px;
+	line-height:25px;
+	padding:0px;
+	margin:0px;
+	padding:0px 5px;
+	color:#505050;
+	border:solid 1px #c5c5c5;
+}
+
+.inputBox:focus
+{
+	border:solid 1px #0CF;
+}
+
+.textareaBox
+{
+	font-size:14px;
+	padding:5px;
+	line-height:20px;
+	color:#505050;
+	border:solid 1px #c5c5c5;
+}
+
+.textareaBox:focus
+{
+	border:solid 1px #0CF;
+}
+
+.submitMode
+{
+	width:102px;
+	height:32px;
+	line-height:28px;
+	background:url(../Images/btnbg.png) no-repeat;
+	text-align:center;
+	border:none;
+	padding:0px;
+	margin:0px 10px;
+	cursor:pointer;	
+	color:#505050;
+	font-size:14px;
+}
+
+.submitMode:hover
+{
+	background:url(../Images/btnbg_hover.png) no-repeat;
+}
+
+.tab_edit
+{
+	width:100%;
+}
+
+.tab_edit td
+{
+	border-bottom:solid 1px #d3d3d3;
+	padding:10px;
+	word-break: break-all;
+	word-wrap:break-word;
+}
+
+.v_0
+{
+	width:25px;
+	height:25px;
+	cursor:pointer;
+	background:url(../Images/v_0.png) no-repeat;
+}
+
+.v_1
+{
+	width:25px;
+	height:25px;
+	cursor:pointer;
+	background:url(../Images/v_1.png) no-repeat;
+}
+
+.selectBox
+{
+	height:25px;
+	font-size:14px;
+	line-height:25px;
+}
+
+.totalPage,.countPage
+{
+	margin:5px 0px;
+	margin-right:10px;
+	height:18px;
+	line-height:18px;
+	display:block;
+	float:left;
+	padding:2px;
+}
+
+.linkPage,.currentPage,.homePage,.endPage,.homePage_ed,.endPage_ed,.prevPage_ed,.prevPage,.nextPage,.nextPage_ed
+{
+	display:block;
+	height:18px;
+	min-width:18px;
+	float:left;
+	text-align:center;
+	line-height:18px;
+	margin:5px 2px;
+	text-decoration:none;
+	border:solid 1px #d3d3d3;
+	background:#fff;
+	padding:2px;
+}
+
+.linkPage:hover,.homePage:hover,.endPage:hover,.prevPage:hover,.nextPage:hover
+{
+	border:solid 1px #b5b5b5;
+	text-decoration:none;
+}
+
+.currentPage
+{
+	border:solid 1px #999;
+}
+
+.currentPage:hover,.homePage_ed:hover,.endPage_ed:hover,.prevPage_ed:hover,.nextPage_ed:hover
+{
+	text-decoration:none;
+}

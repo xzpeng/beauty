@@ -1,0 +1,83 @@
+<include file="Public:header" css="Article_index" js="Article_index"/>
+<script language="javascript">
+var loadUrl='__URL__/loadList';
+var imgUrl='__PUBLIC__/Uploads/';
+var keywords='<{$keywords}>';
+var typeId='<{$type}>';
+var URL='__URL__';
+var typePid='<{$typePid}>';
+</script>
+</head>
+
+<body>
+<!--包含登录框-->
+<include file="Public:loginBox" />
+<include file="Public:top" />
+
+<div id="banner2" style="background-color:<{$banner.bgcolor}>;">
+<a href="<{$banner.href}>" target="<{$banner.window}>">
+<if condition="$banner.swf eq 1 ">
+<!--支持swf动画-->
+<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  >
+  <param name="movie" value="__PUBLIC__/Uploads/<{$banner.img}>">
+  <param name="quality" value="high">
+  <param name="wmode" value="opaque">
+  <param name="swfversion" value="15.0.0.0">
+  <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+  <param name="expressinstall" value="__PUBLIC__/Home/Images/expressInstall.swf">
+  <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+  <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="__PUBLIC__/Uploads/<{$banner.img}>">
+    <!--<![endif]-->
+    <param name="quality" value="high">
+    <param name="wmode" value="opaque">
+    <param name="swfversion" value="15.0.0.0">
+    <param name="expressinstall" value="__PUBLIC__/Home/Images/expressInstall.swf">
+    <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+    <div>
+      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+    </div>
+    <!--[if !IE]>-->
+  </object>
+  <!--<![endif]-->
+</object>
+<!--支持swf动画-->
+<else/>
+<img src="__PUBLIC__/Uploads/<{$banner.img}>"   />
+</if>
+</a>
+</div>
+
+<div id="main">
+
+<div id="row0" class="rows">
+<if condition='$typeList eq  ""'>
+<else />
+<div class="items" style="opacity:1;">
+<div id="typeList">
+<div id="listTop">分类筛选</div>
+<div id="listContent">
+<a href="__URL__/index/pid/<{$pid}>">全部</a>
+<volist name="typeList" id="vo">
+<a href="__URL__/index/id/<{$vo.id}>/keywords/<{$keywords}>"><{$vo.title}></a>
+</volist>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</if>
+
+
+</div>
+</div>
+<div id="mesg"></div>
+<div class="clear"></div>
+<span style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe6cd86014e276f6360060c7904dec030' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</span>
+</body>
+</html>

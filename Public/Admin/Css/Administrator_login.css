@@ -1,0 +1,67 @@
+body
+{
+	background-color:#f9f9f9;
+}
+
+#top
+{
+	height:80px;
+	background:url(../Images/logoinTop.png) no-repeat center top;
+}
+
+#loginBox
+{
+	width:534px;
+	height:277px;
+	background:url(../Images/loginBg.png) no-repeat;
+	margin:0px auto;
+	text-align:center;
+	line-height:35px;
+	padding-top:25px;
+}
+
+.inputBox
+{
+	padding:0px;
+	margin:0px;
+	background:#FFF;
+	border:solid 1px #bfc0c1;
+	line-height:25px;
+	height:25px;
+	font-size:18px;
+}
+
+.verifyImg
+{
+	border:solid 1px #bfc0c1;
+	float:left;
+	margin-right:5px;
+}
+
+#verifyBox
+{
+	width:210px;
+	height:28px;
+	line-height:28px;
+	margin:5px auto;
+	cursor:pointer;
+}
+
+#doLogin
+{
+	width:102px;
+	height:32px;
+	background:url(../Images/btnbg.png) no-repeat;
+	margin:0px auto;
+	line-height:32px;
+	cursor:pointer;
+	margin-top:10px;
+	display:block;
+	padding:0px;
+	border:none;
+}
+
+#doLogin:hover
+{
+	background:url(../Images/btnbg_hover.png) no-repeat;
+}

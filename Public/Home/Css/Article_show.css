@@ -1,0 +1,196 @@
+body
+{
+	background-color:#f5f5f5;
+}
+
+#bottom
+{
+	width:1000px;
+}
+
+#main
+{
+	width:1000px;
+	margin:0px auto;
+}
+
+#banner
+{
+	margin:10px 0px;
+	text-align:center;
+}
+
+#banner img
+{
+	border:none;
+}
+
+#content
+{
+	margin:10px 0px;
+	min-height:500px;
+}
+
+#titleBox
+{
+	background:url(../Images/content_title_bg.jpg) no-repeat;
+	height:44px;
+	width:730px;
+	padding:15px 0px;
+	padding-left:270px;
+	margin:10px 0px;
+	color:#fff;
+}
+
+#title
+{
+	height:24px;
+	line-height:24px;
+	font-size:16px;
+	font-weight:bold;
+	width:730px;
+}
+
+#info
+{
+	height:20px;
+	width:730px;
+	font-size:12px;
+	line-height:20px;
+}
+
+#card
+{
+	height:640px;
+	width:1000px;
+}
+
+#card_left
+{
+	width:490px;
+	height:100px;
+	margin-right:20px;
+	padding-top:540px;
+	float:left;
+}
+
+#card_right
+{
+	width:490px;
+	height:640px;
+	float:left;
+}
+
+#remark
+{
+	background:url(../Images/remarkBg.png) repeat-y;
+	padding:20px 20px;
+	height:60px;
+	color:#fff;
+	font-size:12px;
+}
+
+#card_right h1
+{
+	color:#9f0153;
+	margin:0px;
+	padding:0px;
+	font-family:微软雅黑;
+	font-size:24px;
+	font-weight:normal;
+}
+
+.picture2
+{
+	border:solid 1px #000;
+	padding:2px;
+	background-color:#fff;
+	float:left;
+	margin-right:10px;
+}
+
+.tab_card
+{
+	width:490px;
+	font-size:14px;
+	line-height:25px;
+}
+
+.tab_card td
+{
+	border-bottom:solid 1px #cfcfcf;
+	padding:10px 0px;
+}
+
+.tab_card a
+{
+	color:#555;
+}
+
+.tab_card a:hover
+{
+	color:#9f0153;
+}
+
+.qq
+{
+	float:left;
+	display:block;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+.tab_pf td
+{
+	border-bottom:none;
+	padding:0px;
+	margin:0px;
+}
+
+.wjx
+{
+	height:14px;
+	width:14px;
+	margin:0px 3px;
+	background:url(../Images/wjx_2.png) no-repeat center center;
+	cursor:pointer;
+}
+
+.wjxLight
+{
+	background:url(../Images/wjx_1.png) no-repeat center center;
+}
+
+.scoreMask
+{
+	color:#fff;
+	text-align:center;
+	display:none;
+	position:absolute;
+	width:490px;
+	line-height:75px;
+}
+
+#login_btn2
+{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+.scoreMask a
+{
+	color:#fff;
+}
+
+
+.maskBg
+{
+	background:#000;
+	opacity:0.6;
+}
+
+.xlwb
+{
+	display:block;
+	float:left;
+}

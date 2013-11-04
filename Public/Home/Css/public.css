@@ -1,0 +1,18 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+	color:#555;
+	font-size:12px;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.search_text_default
+{
+	color:#999;
+}

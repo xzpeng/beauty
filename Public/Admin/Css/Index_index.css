@@ -1,0 +1,212 @@
+html
+{
+	overflow:hidden;
+}
+
+#top
+{
+	height:30px;
+	padding:10px 0px;
+	padding-right:20px;
+	background-color:#313131;
+}
+
+#logo
+{
+	height:30px;
+	display:block;
+	float:left;
+}
+
+#loginInfo
+{
+	color:#fff;
+	float:right;
+	height:30px;
+}
+
+#top a
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+#top a:hover
+{
+	text-decoration:underline;
+}
+
+#nav
+{
+	background:#e6e6e6;
+	height:30px;
+}
+
+#nav_deepcolor
+{
+	background:#d4d3d3;
+	height:5px;
+}
+
+#nav td
+{
+	height:30px;
+	line-height:30px;
+	padding:0px 5px;
+}
+
+#nav #menuDisplay
+{
+	width:221px;
+	text-align:center;
+	cursor:pointer;
+}
+
+#nav #taskTitle
+{
+	padding-left:15px;
+	font-weight:bold;
+}
+
+#nav #selectAll
+{
+	vertical-align:middle;
+}
+
+#nav #selectInvert
+{
+	vertical-align:middle;
+}
+
+#nav label
+{
+	cursor:pointer;
+	padding-left:3px;
+}
+
+.nav_link
+{
+	padding-left:25px;
+	height:20px;
+	line-height:20px;
+	cursor:pointer;
+	background-image:url(../Images/nav_link.png);
+	background-repeat:no-repeat;
+}
+
+#delete
+{
+	background-image:url(../Images/delete.png);
+}
+
+#on,#off
+{
+	background-image:url(../Images/display.png);
+}
+
+#recommend
+{
+	background-image:url(../Images/recommend.png);
+}
+
+#refresh
+{
+	background-image:url(../Images/refresh.png);
+}
+
+#back
+{
+	background-image:url(../Images/back.png);
+}
+
+#hideTop
+{
+	background-image:url(../Images/hideTop.png);
+}
+
+.nav_link:hover
+{
+	background-position:0px -20px;
+	color:#000;
+}
+
+#left
+{
+	background:#e6e6e6;
+	width:230px;
+	border-right:solid 1px #d3d3d3;
+	float:left;
+	overflow:auto;
+}
+
+#left ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+#left a
+{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	display:block;
+}
+
+#left a:hover
+{
+	text-decoration:none;
+	background-color:#d9d9d9;
+}
+
+#left ul li.fgline
+{
+	height:2px;
+	background:url(../Images/fgline.png) no-repeat;
+}
+
+.to_right
+{
+	background:url(../Images/to_right.png) no-repeat 190px center;
+}
+
+.to_right:hover
+{
+	background:url(../Images/to_right_hover.png) no-repeat 190px center;
+}
+
+.to_bottom
+{
+	background:url(../Images/to_bottom.png) no-repeat 190px center;
+}
+
+.to_bottom:hover
+{
+	background:url(../Images/to_bottom_hover.png) no-repeat 190px center;
+}
+
+.to_top
+{
+	background:url(../Images/to_top.png) no-repeat 190px center;
+}
+
+.to_top:hover
+{
+	background:url(../Images/to_top_hover.png) no-repeat 190px center;
+}
+
+.downlist
+{
+	background:#f1f1f1;
+	border-top:solid 1px #b8b8b8;
+	display:none;
+}
+
+#childPage
+{
+	border-top:none;
+	background:#fff;
+	float:left;
+	overflow:auto;
+}
